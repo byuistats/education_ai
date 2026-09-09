@@ -1,4 +1,4 @@
-# education_ai
+# AI Presentations related to Education
 
 Short presentations and discussion materials about artificial intelligence in education.
 
