@@ -1,0 +1,118 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+$presentation-heading-color: #1a3a5c;
+$link-color: #2a6f97;
+$presentation-font-size-root: 32px;
+
+/*-- scss:rules --*/
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal h2 {
+  border-bottom: 3px solid #2a6f97;
+  padding-bottom: 0.15em;
+  margin-bottom: 0.6em;
+}
+
+.reveal blockquote {
+  font-size: 1.25em;
+  font-style: italic;
+  color: #1a3a5c;
+  border-left: 6px solid #2a6f97;
+  padding: 0.4em 0.8em;
+  background: #f0f6fa;
+  box-shadow: none;
+}
+
+.prompt-box {
+  background: #f6f3ec;
+  border: 2px solid #c9b98a;
+  border-radius: 8px;
+  padding: 0.55em 0.85em;
+  font-family: "Courier New", monospace;
+  font-size: 0.68em;
+  line-height: 1.4;
+  margin: 0.4em 0;
+}
+
+.reveal section[data-background-color] h1,
+.reveal section[data-background-color] p,
+.reveal section[data-background-color] em {
+  color: #ffffff;
+}
+
+.reveal section[data-background-color] h1 {
+  border-bottom: 3px solid #c9b98a;
+  padding-bottom: 0.2em;
+  font-size: 1.6em;
+}
+
+.reveal section[data-background-color="#2a6f97"] a {
+  color: #c9b98a;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+.reveal section[data-background-color="#2a6f97"] .prompt-box {
+  color: #222222;
+}
+
+.reveal section[data-background-color="#2a6f97"] .prompt-box p {
+  color: #222222;
+}
+
+.tool-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+  margin-top: 1.1em;
+}
+
+.tool-logos img {
+  border: 0;
+  box-shadow: none;
+}
+
+.tool-logo-label {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 0.8em;
+}
+
+.mono {
+  font-family: "Courier New", monospace;
+  background: #eef2f5;
+  padding: 0 0.25em;
+  border-radius: 4px;
+}
+
+.footer-cite {
+  position: absolute;
+  bottom: 0.5em;
+  font-size: 0.5em;
+  color: #777;
+}
+
+.center-title {
+  text-align: left;
+}
+
+.reveal .footer {
+  font-size: 0.45em;
+  color: #999;
+}
+
+.reveal ul li, .reveal ol li {
+  margin-bottom: 0.25em;
+}
+
+.reveal h2 {
+  font-size: 1.35em;
+}
+
+.reveal .slide blockquote {
+  margin: 0.4em 0;
+}

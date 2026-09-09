@@ -1,0 +1,239 @@
+---
+title: "Generative AI Hasn't Changed Learning"
+subtitle: "What statistics educators should protect, redesign, and research"
+author: "DS, CS, and Statistics Educators (with notes from J. Hathaway)"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "AI and Statistics Education"
+---
+
+## The lasting artifact is the learner
+
+The homework, project, or exam is temporary. The durable outcome is what develops **within the student** while doing the work.
+
+<br>
+
+::: {.big-claim}
+The educational task is to move students from novice to expert.
+:::
+
+> GenAI amplifies existing expertise, but its unchecked adoption by students hinders their ability to develop that expertise.
+
+<div class="two-col">
+<div>
+<span class="label">Learning sciences</span>
+
+Students need a working mental model of the systems they interact with.
+</div>
+<div>
+<span class="label">Professional judgment</span>
+
+An accurate mental model supports causal reasoning: make a prediction, test it, and update the model.
+</div>
+</div>
+
+::: {.source-note}
+Research frame: DiSessa (1982); Schauble et al. (1991); paper, “What is learning?”
+:::
+
+---
+
+## Statistics is a system, not just a task
+
+In statistics and data science, students must connect:
+
+<div class="two-col">
+<div>
+<span class="label">Data context</span>
+
+What was measured? Who or what do the observations represent? What could make the data misleading?
+</div>
+<div>
+<span class="label">Models and software</span>
+
+What does a regression model assume? What does the code calculate? What does the output mean here?
+</div>
+</div>
+
+<br>
+
+GenAI can produce accurate explanations of regression and write R or Python code. It can also complete many tasks we assign in introductory courses.
+
+::: {.callout-note appearance="simple"}
+The visible task may be automated. The mental model still has to belong to the student.
+:::
+
+::: {.source-note}
+Paper, “What is learning?”; DeLuca et al. (2025); Lu et al. (2025)
+:::
+
+---
+
+## The same tool behaves differently for novices
+
+<div class="two-col">
+<div>
+<span class="label">Experts</span>
+
+GenAI can extend knowledge and experience, helping experts work faster and explore more possibilities.
+
+<br>
+
+They can triage suggestions, check claims, and frame the next question.
+</div>
+<div>
+<span class="label">Novices</span>
+
+GenAI can lead them toward an answer to the wrong question.
+
+<br>
+
+They may not know what to ask, cannot reliably judge false output, and may mistake a fluent conversation for learning.
+</div>
+</div>
+
+<br>
+
+::: {.big-claim}
+GenAI works primarily as an amplifier of the skills a person already has.
+:::
+
+::: {.source-note}
+Daniotti et al. (2026); Prather et al. (2023, 2024); Fan et al. (2025); paper, “Early returns on learning with generative AI”
+:::
+
+---
+
+## The abacus is the warning {.dark-slide background-color="#1a3a5c"}
+
+<div class="video-layout">
+<div>
+<img src="abacus-video.jpg" alt="YouTube thumbnail showing a person demonstrating an abacus" />
+</div>
+<div>
+<span class="label">A quick test</span>
+
+Watch the <a href="https://youtu.be/SYRyKYmOJwM?si=NeOWw5iaRnE4JYIz&t=123">abacus demonstration</a> and ask:
+
+<br>
+
+**How long would students pay attention if the only goal were to pass a test?**
+
+<br>
+
+The point is not to defend an old tool because it is familiar. The point is to identify what the tool was supposed to develop, then design a better route to that capability.
+</div>
+</div>
+
+
+::: {.source-note}
+J. Hathaway's thoughts.
+:::
+
+---
+
+## A case for new kinds of practice {.dark-slide background-color="#1a3a5c"}
+
+> With GenAI we need new problems and assignments that require persistence and endurance, because our historical assignments feel a bit like learning how to use an abacus. It is a skill we can develop and perform quickly, but it will not be very helpful for thinking or employment in modern society.
+
+<br>
+
+::: {.closing-line}
+Practice still matters when it builds the capacity students need next.
+:::
+
+::: {.source-note}
+J. Hathaway's thoughts.
+:::
+
+---
+
+## Assessment should reveal the learning goal
+
+The authors are re-orienting courses around assessments in AI-free environments:
+
+<div class="two-col">
+<div>
+<span class="label">Foundational understanding</span>
+
+Use in-class quizzes, exams, oral explanations, and other settings where the student must retrieve and reason independently.
+</div>
+<div>
+<span class="label">Future practice</span>
+
+Use GenAI where it helps students extend an established mental model into authentic analysis, communication, or production.
+</div>
+</div>
+
+<br>
+
+This is an alignment decision, not a technology ban: **assess what we say matters**.
+
+::: {.source-note}
+Paper, “What our key constituencies need to know about learning with GenAI” and “Conclusion and Paths Forward”
+:::
+
+---
+
+## A path forward for statistics educators
+
+The paper closes with a shared responsibility:
+
+<div class="two-col">
+<div>
+<span class="label">Set boundaries</span>
+
+Make the role of GenAI explicit in each assignment and assessment.
+
+<br>
+
+Explain why the practice is worth the effort.
+</div>
+<div>
+<span class="label">Do the research</span>
+
+Study where GenAI helps learning and where it replaces the learning process.
+
+<br>
+
+Keep students connected to faculty, peers, and the work itself.
+</div>
+</div>
+
+<br>
+
+::: {.big-claim}
+Build the expertise so AI can amplify it.
+:::
+
+::: {.source-note}
+Discussion source: An et al., 2026. Full paper: “Generative AI paper.pdf” in this folder.
+:::
+
+---
+
+## Sources and a question to carry forward
+
+**Primary source**
+
+[An, Ming-Wen, et al. “Generative AI hasn't changed learning: It's still hard to become an expert.” 2026.](https://beanumber.github.io/aalac2026/manuscript/#sec-workshop)
+
+**Selected research cited by the authors**
+
+DiSessa (1982); Ericsson and Pool (2017); Willingham (2008); DeLuca et al. (2025); Lu et al. (2025); Prather et al. (2023, 2024); Fan et al. (2025); Liu et al. (2026).
+
+<br>
+
+::: {.callout-note appearance="simple"}
+What should students be able to do without AI so that they can use AI well later?
+:::
+
+::: footer-cite
+Quote selections and discussion prompts adapted from ai_stats_leaders/mynotes.md
+:::

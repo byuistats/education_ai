@@ -1,0 +1,339 @@
+---
+title: "Why AI Works"
+subtitle: "A nonlinear tour of large language models"
+author: "Student Discussion Deck"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Why AI Works · Student discussion"
+---
+
+## Why AI works {.dark-slide background-color="#1a3a5c"}
+
+__A nonlinear tour of large language models__
+
+::: {.big-claim}
+Think of a language model as a nonlinear dynamical system. Small changes can produce disproportionately large effects.
+:::
+
+<div class="two-col">
+<div>
+<span class="label">Linear intuition</span>
+
+Double the input and you roughly double the output.
+
+<br>
+
+The system is comparatively easy to predict.
+</div>
+<div>
+<span class="label">Nonlinear behavior</span>
+
+Output feeds back into the system.
+
+<br>
+
+A small change can produce a large effect, while a large change can produce almost no effect.
+</div>
+</div>
+
+
+::: {.source-note}
+Adapted from Thomas Cherickal, “The Nonlinear Science Behind Large Language Models,” HackerNoon, September 9, 2026.
+Article sections: “Nobody Knows How These Things Work” and “What Is a Nonlinear Dynamical System?”
+:::
+
+---
+
+## Training follows a power law
+
+The article begins with the most reliable pattern in modern AI: as we add parameters, data, and compute, prediction error falls in a smooth but expensive curve.
+
+<div class="formula">
+Loss = unavoidable error + model-size penalty + data-size penalty
+</div>
+
+<br>
+
+<div class="two-col">
+<div>
+<span class="label">What scales</span>
+
+More parameters give a model more capacity. More training text gives it more patterns to learn.
+</div>
+<div>
+<span class="label">Why it matters</span>
+
+Doubling the model does not double its quality. Each additional gain requires much more data and compute.
+</div>
+</div>
+
+::: {.big-claim}
+The 20-to-1 rule: roughly 20 training tokens per parameter is a useful compute-optimal target.
+:::
+
+::: {.source-note}
+Kaplan et al. (2020), Scaling Laws for Neural Language Models; Hoffmann et al. (2022), Chinchilla. Numbers summarized by the article.
+:::
+
+---
+
+## Smooth training can produce sudden skills {.dark-slide background-color="#1a3a5c"}
+
+The loss curve may improve gradually while a real-world capability appears almost all at once.
+
+<div class="sequence">
+<div>
+<strong>Below the threshold</strong>
+<span>Arithmetic or reasoning looks like random guessing.</span>
+</div>
+<div>
+<strong>Near the threshold</strong>
+<span>A small change in scale, data, or training can matter a lot.</span>
+</div>
+<div>
+<strong>Above the threshold</strong>
+<span>The capability becomes useful and feels like a jump.</span>
+</div>
+</div>
+
+<br>
+
+Physics calls this a **phase transition**: water stays liquid, then changes state at a critical temperature. The article argues that some AI abilities behave similarly.
+
+::: {.discussion}
+Question: When a skill appears suddenly, did the model “learn” it gradually underneath, or did something genuinely new emerge?
+:::
+
+::: {.source-note}
+Wei et al. (2022); Schaeffer et al. (2023); Du et al. (2024). The article notes that some emergence claims depend on how we measure ability.
+:::
+
+---
+
+## Grokking: memorization gives way to a rule
+
+**Grokking** is a delayed jump from memorizing training examples to discovering a rule that generalizes to examples the model has never seen.
+
+Researchers saw this in small models trained on modular arithmetic, such as clock math where 9 + 5 = 2 on a 12-hour clock. The model first fit the examples, then seemed stuck, then suddenly found the underlying pattern.
+
+<div class="sequence">
+<div>
+<strong>Memorize</strong>
+<span>Seen examples are correct. New examples fail.</span>
+</div>
+<div>
+<strong>Plateau</strong>
+<span>Training continues while test performance appears unchanged. Internally, a better strategy may be forming.</span>
+</div>
+<div>
+<strong>Generalize</strong>
+<span>The model finds a compact rule that works on new cases.</span>
+</div>
+</div>
+
+<br>
+
+::: {.big-claim}
+Understanding can be simpler inside the network than memorizing every answer.
+:::
+
+::: {.source-note}
+Power et al. (2022), “Grokking: Generalization Beyond Overfitting”; Nanda et al. (2023); Varma et al. (2023). Article section: “Why does this happen?”
+:::
+
+---
+
+## The useful zone sits near the edge
+
+<div class="two-col">
+<div>
+<span class="label">Temperature</span>
+
+In an LLM, temperature is a sampling setting that controls how much variety the model allows when choosing its next token.
+</div>
+<div>
+<span class="label">Criticality</span>
+
+Criticality is the boundary between rigid order and unstable chaos: sensitive enough for rich patterns, stable enough to preserve signal.
+</div>
+</div>
+
+<div class="two-col">
+<div>
+<span class="label">Low temperature: too orderly</span>
+
+Near-zero temperature favors the most likely continuation. Output can become repetitive and dull.
+</div>
+<div>
+<span class="label">High temperature: too chaotic</span>
+
+High temperature spreads probability across more alternatives. Output can become fluent, confident nonsense.
+</div>
+</div>
+
+<br>
+
+::: {.big-claim}
+Useful output lives between repetition and randomness.
+:::
+
+::: {.source-note}
+Schoenholz et al. (2017); Dong et al. (2021); Bertschinger and Natschläger (2004). Article sections: “At the Edge of Chaos” and “Self-organized criticality.”
+:::
+
+---
+
+## In-context learning switches on {.compact-slide}
+
+::: {.big-claim}
+In-context learning means using examples in the prompt to infer a pattern without changing the model’s weights.
+:::
+
+For example: show “red = warm” and “blue = cool,” then ask the model to classify “green.” The model adapts inside the conversation, without retraining.
+
+The article highlights research suggesting that this ability appears after roughly **2.5 to 5 billion training tokens**, across a wide range of model sizes.
+
+::: {.big-claim}
+The prompt may be the same. The model may have crossed a training threshold.
+:::
+
+<div class="two-col">
+<div>
+<span class="label">Before</span>
+
+Examples in the prompt do little more than provide extra text.
+</div>
+<div>
+<span class="label">After</span>
+
+Induction-head circuits are transformer attention patterns that spot a repeated sequence and copy what followed.
+</div>
+</div>
+
+::: {.source-note}
+Olsson et al. (2022), “In-Context Learning and Induction Heads”; Zhu et al. (2024). Article section: “The most beautiful result in the field.”
+:::
+
+---
+
+## Language lives on a thinner shape than it occupies
+
+<div class="image-layout">
+<div>
+<img src="manifold-article-image.png" alt="Fractal triangle illustration from the article, labeled with model scaling thresholds" />
+<small>Illustration from the article</small>
+</div>
+<div>
+<span class="label">Manifold hypothesis</span>
+
+High-dimensional data often lies near a much thinner, lower-dimensional structure.
+
+<br>
+
+Think of a crumpled sheet: it occupies three-dimensional space, but the sheet itself is two-dimensional. Images and word embeddings may work similarly inside their enormous spaces.
+
+<div class="formula">
+Space around the data ≠ complexity of the data
+</div>
+</div>
+</div>
+
+::: {.source-note}
+Sharma and Kaplan (2020); Kaplan et al. (2020). Image from [the article](https://hackernoon.com/the-nonlinear-science-behind-large-language-models), which identifies its images as AI-generated.
+:::
+
+---
+
+## What this lens helps us notice {.dark-slide background-color="#2a6f97"}
+
+The nonlinear-dynamics lens does not make every AI claim true. It gives us better questions:
+
+<div class="two-col">
+<div>
+<span class="label">Ask about thresholds</span>
+
+What changed: model size, training data, loss, prompt, or measurement?
+
+<br>
+
+Did a capability appear, or did our scoring method reveal it differently?
+</div>
+<div>
+<span class="label">Ask about generalization</span>
+
+Did the model memorize an answer, or discover a method that works on new cases?
+
+<br>
+
+What evidence would distinguish those explanations?
+</div>
+</div>
+
+<br>
+
+::: {.discussion}
+For a small group: choose one AI capability and identify its possible threshold, evidence, and failure mode.
+:::
+
+::: {.source-note}
+Synthesis of the article’s discussion of scaling, emergence, grokking, criticality, and scientific testing.
+:::
+
+---
+
+## The biggest question points back to us
+
+The article’s most speculative move is also its most memorable: LLMs may be the first complex nonlinear systems that are fully instrumented.
+
+<div class="two-col">
+<div>
+<span class="label">What we can do with models</span>
+
+Read every weight. Save every training checkpoint. Change one variable and rerun the experiment.
+</div>
+<div>
+<span class="label">What we cannot do with brains</span>
+
+We cannot inspect every connection or replay a human mind with one controlled change.
+</div>
+</div>
+
+<br>
+
+The author is careful not to claim that an LLM is a brain. The proposal is narrower: studying emergence in models might give us tools for studying emergence in minds.
+
+::: {.discussion}
+What would count as evidence that a model has discovered a rule rather than memorized an answer?
+:::
+
+::: {.source-note}
+Article conclusion: “What if the science we develop to understand emergence in language models becomes the science that finally cracks emergence in minds?”
+:::
+
+---
+
+## Sources and a final question
+
+**Main article**
+
+[Thomas Cherickal, “The Nonlinear Science Behind Large Language Models”](https://hackernoon.com/the-nonlinear-science-behind-large-language-models)
+
+**Research anchors named in the article**
+
+Kaplan et al. (2020), Hoffmann et al. (2022), Wei et al. (2022), Schaeffer et al. (2023), Power et al. (2022), Olsson et al. (2022), Dong et al. (2021), Schoenholz et al. (2017)
+
+<br>
+
+::: {.callout-note appearance="simple"}
+The article’s central invitation: stop saying that LLMs are unknowable. Use experiments, measurements, and the mathematics of complex systems to ask better questions.
+:::
+
+::: footer-cite
+Some article prose and captions are identified by the author as AI-generated. Treat the article as a guided tour and verify technical claims against the cited papers.
+:::

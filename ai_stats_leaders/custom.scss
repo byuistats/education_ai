@@ -1,0 +1,116 @@
+/*-- scss:defaults --*/
+@import "../ai_introduction/custom.scss";
+
+/*-- scss:rules --*/
+
+.reveal .slides section {
+  font-size: 0.9em;
+}
+
+.reveal .slides section.title-slide h1 {
+  max-width: 80%;
+  font-size: 1.55em;
+  line-height: 1.08;
+}
+
+.reveal .slides section.title-slide .subtitle {
+  color: #2a6f97;
+  font-size: 0.8em;
+}
+
+.reveal .slides section.dark-slide h2,
+.reveal .slides section.dark-slide p,
+.reveal .slides section.dark-slide li,
+.reveal .slides section.dark-slide em {
+  color: #ffffff;
+}
+
+.reveal .slides section.dark-slide h2 {
+  border-bottom-color: #c9b98a;
+}
+
+.reveal .slides section.dark-slide blockquote {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: #c9b98a;
+}
+
+.reveal .slides section.dark-slide .source-note {
+  color: #dbe7ef;
+}
+
+.reveal .slides section.dark-slide .label {
+  color: #c9b98a;
+}
+
+.reveal .slides section.dark-slide .footer {
+  color: #dbe7ef;
+}
+
+.reveal .slides section .source-note {
+  font-size: 0.48em;
+  color: #6d7880;
+  margin-top: 1em;
+}
+
+.reveal .slides section .big-claim {
+  color: #1a3a5c;
+  font-size: 1.28em;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0.7em 0;
+}
+
+.reveal .slides section .accent {
+  color: #2a6f97;
+  font-weight: 700;
+}
+
+.reveal .slides section .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
+}
+
+.reveal .slides section .two-col > div {
+  min-height: 4.6em;
+}
+
+.reveal .slides section .video-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.1em;
+  align-items: center;
+}
+
+.reveal .slides section .video-layout img {
+  width: 100%;
+  max-height: 8.8em;
+  object-fit: cover;
+  border: 4px solid #c9b98a;
+  box-shadow: none;
+}
+
+.reveal .slides section .video-layout p {
+  margin: 0.45em 0;
+}
+
+.reveal .slides section .label {
+  color: #2a6f97;
+  font-size: 0.58em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reveal .slides section .rule {
+  border-top: 2px solid #c9b98a;
+  margin: 0.8em 0;
+}
+
+.reveal .slides section .closing-line {
+  color: #c9b98a;
+  font-size: 1.1em;
+  font-weight: 700;
+}

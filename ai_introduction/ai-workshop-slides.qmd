@@ -1,0 +1,194 @@
+---
+title: "Wrestling with the Machine"
+subtitle: "AI in Education · Math Department Meeting"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Math Department · AI Workshop"
+---
+
+## Why are we doing this? {.center-title}
+
+David Brooks, *The Atlantic* (June 2026), on who will thrive in the AI age:
+
+<br>
+
+> "When intelligence is plentiful, volition is valuable."
+
+<br>
+
+His argument: What will separate people isn't raw intelligence — it's their **relationship to mental effort**. Today is about building the right relationship with these tools, on our terms.
+
+::: footer-cite
+Brooks, "The People Who Will Thrive in the AI Age," *The Atlantic*, June 28, 2026
+:::
+
+---
+
+## Three kinds of AI users (per Brooks)
+
+**The Productive Passengers**
+Use AI to think *less*. They get faster — and gradually hollowed out.
+
+**The Reluctant Optimizers**
+Know the risk, resolve to resist... then get sucked in by the rush of daily life.
+
+**The Mental Marathoners**
+Use AI to think *more* — like runners who train for miles despite the existence of cars. They wrestle with the tool to expand their own capacity.
+
+<br>
+
+::: {.callout-note appearance="simple"}
+Today's goal: practice being marathoners, not passengers.
+:::
+
+---
+
+## What the research shows
+
+Brooks surveys studies suggesting the stakes are real:
+
+- Workers who adopted AI didn't work less — their days got **fuller and more fragmented**, with less time in deep focus
+- Brain-imaging studies found sharply **reduced cognitive engagement** during AI-assisted tasks
+- Skills **atrophy**: physicians whose AI assistance was removed detected fewer lesions than before they'd ever used it
+- People accepted an AI's deliberately planted wrong answers the **overwhelming majority** of the time
+
+<br>
+
+::: {.callout-note appearance="simple"}
+The tool is powerful. Passive use has a cost. So we practice *active* use.
+:::
+
+---
+
+## What this means for education
+
+Brooks's closing argument, and the reason this matters beyond our own workflows:
+
+- Our system was built around **content and intelligence** — download knowledge, sort the smart. When machines know everything, that's no longer what distinguishes anyone.
+- Education will have to reorient around **volition**: the desire to work hard and put knowledge to creative use
+- Design matters: an AI used as an **answer machine** replaces mental muscle; an AI designed like a **tutor or personal trainer** builds it
+- Motivation grows from autonomy, competence, and relatedness — and from admiration and apprenticeship
+- Our courses can inflame the desire for hard thinking, or crush it
+
+<br>
+
+::: {.callout-note appearance="simple"}
+**The goal:** avoid a future split between those who use AI to think more and those who use it to think less — starting with how *we* model it for our students.
+:::
+
+---
+
+## Logistics (5 min)
+
+- **Groups of 3** — one keyboard driver, one prompter, one skeptic. Rotate between activities.
+- **One laptop per group** is plenty (12 groups)
+- **One tool for the room:** [gemini.google.com]{.mono} — no account needed
+- Get to a working chat window.
+
+<br>
+
+::: {.callout-tip appearance="simple"}
+Skeptics: your job today is to catch the machine making mistakes. Seriously.
+:::
+
+---
+
+# Activity 1: The Problem Set Race {background-color="#1a3a5c"}
+
+*20 minutes · Can you get a problem set you'd actually edit and use?*
+
+---
+
+## Round 1 — First draft (5 min)
+
+Adapt to any course you teach:
+
+::: {.prompt-box}
+"Create a problem set for **Calculus I** on **optimization**. Include: 4 routine problems, 3 conceptual questions that test understanding rather than computation, and 2 challenging application problems in a Latex file. In a seperate latex file Provide full worked solutions. Show me the questions first before you build the Latex files."
+:::
+
+<br>
+
+While it generates, decide as a group: 
+- **would you assign this as-is?**
+- **What's wrong with it?**
+
+::: {.prompt-box}
+Finding flaws is the point — that's Round 2.
+:::
+
+---
+
+## Round 2 — Iterate (7 min)
+
+Pick **two** refinements and prompt for them:
+
+1. "Problem 6 is too easy for the 'challenging' section — replace it with a related-rates twist"
+2. "Rewrite the applications for the students actually in my class: [engineering / biology / economics]"
+3. "Add a common-mistakes note under each solution for the grader"
+4. "Check the solution to problem ___ — I think there's an error"
+5. "Convert the conceptual questions to multiple choice, with distractors based on real misconceptions"
+
+<br>
+
+Notice: nobody needs the perfect prompt. **The conversation is the interface.**
+
+---
+
+## Round 3 — The make-up exam (5 min)
+
+One prompt:
+
+::: {.prompt-box}
+"Now generate a **make-up exam version**: same structure, same difficulty, same skills tested — but different numbers and contexts, so a student who saw the original has no advantage. Include solutions."
+:::
+
+<br>
+
+**Share-out:**
+
+- Who got LaTeX clean enough to paste into your template?
+- Who caught an actual error? What was it?
+- What would you still have to do by hand?
+
+---
+
+# One try is not a verdict {background-color="#1a3a5c"}
+
+*It's a first rep.*
+
+---
+
+## An invitation
+
+Today you saw one task. Here's the ask:
+
+**For your Fall course preparation, pick one real task from your week** — a problem set, an exam variant, a stubborn explanation, a dreaded email — **and try it with AI.**
+
+- Bring back what you made — *or* where it broke. **Both count.**
+- Want a thinking partner while you try? Paul Cannon, Ben Woodruff, Natalie Rhodes, or J. Hathaway are happy to help. Just email or ping us.
+- Realize that these tools are changing every three to four weeks, criticism from two months ago often no longer apply.
+- Claude Code is the premium tool for support. I recommend getting a subscription and using it.
+
+---
+
+## The final word
+
+<br>
+
+> "When intelligence is plentiful, volition is valuable."
+
+<br>
+
+<br>
+
+::: {.callout-note appearance="simple"}
+The ground rule that outlasts today: use these tools to think *more*, not less. When intelligence is plentiful, what's valuable is the will to use it well. **We must exemplify the marathoner in our classrooms.**
+:::
+
