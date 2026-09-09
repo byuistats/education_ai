@@ -1,7 +1,3 @@
-# Education AI presentations
-
-Short presentations for conversations about AI, teaching, and learning.
-
 ## Presentations
 
 | Presentation | Overview |

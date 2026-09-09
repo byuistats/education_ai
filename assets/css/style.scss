@@ -1,0 +1,127 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --byui-blue: #006eb6;
+  --byui-dark-blue: #214491;
+  --byui-light-blue: #a0d4ed;
+  --byui-gray: #949598;
+  --byui-light-gray: #f4f6f7;
+}
+
+body {
+  background: #ffffff;
+  color: #222222;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+table th,
+strong {
+  font-family: "Arial Narrow", "Aptos Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--byui-dark-blue);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h1 {
+  border-bottom: 4px solid var(--byui-blue);
+  padding-bottom: 0.2em;
+}
+
+h2 {
+  border-bottom: 2px solid var(--byui-light-blue);
+  padding-bottom: 0.15em;
+}
+
+a {
+  color: var(--byui-blue);
+  font-weight: 600;
+}
+
+a:hover,
+a:focus {
+  color: var(--byui-dark-blue);
+}
+
+header h1,
+header h1 a,
+.site-title {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  display: table;
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+table th {
+  background: var(--byui-blue);
+  color: #ffffff;
+  font-size: 1.05em;
+  letter-spacing: 0.02em;
+  padding: 0.7em 0.9em;
+  text-align: left;
+}
+
+table td {
+  border-bottom: 1px solid var(--byui-light-blue);
+  padding: 1em;
+  vertical-align: middle;
+}
+
+table tr:nth-child(even) td {
+  background: var(--byui-light-gray);
+}
+
+table td:first-child {
+  text-align: center;
+  width: 34%;
+}
+
+table td:first-child img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 260px;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table td:first-child {
+    width: auto;
+  }
+}

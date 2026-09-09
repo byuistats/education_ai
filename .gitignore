@@ -1,0 +1,11 @@
+# Temporary visual QA screenshots
+tmp/
+
+# Quarto and Jekyll build artifacts
+.quarto/
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Operating system metadata
+.DS_Store
