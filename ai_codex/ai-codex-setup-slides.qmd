@@ -24,15 +24,23 @@ Get from a BYU-I account to a working Codex extension in VS Code.
 **Four checkpoints:** account access · workspace choice · Codex install · VS Code connection
 :::
 
+<div class="setup-link">
+<img src="bitly-qr.png" alt="QR code linking to bit.ly/4xgqTCg">
+<div>
+<div class="bitly-url">bit.ly/4xgqTCg</div>
+<div class="bitly-instruction">Open this presentation on your computer.</div>
+</div>
+</div>
+
 ---
 
 ## BYU-I ChatGPT access
 
 ::: columns
 ::: {.column width="58%"}
-<img src="byui-chatgpt-webpage.png" alt="BYU-I ChatGPT Edu webpage" style="width:100%">
+<div class="navigate-url">Navigate to this URL:<br><strong>byui.edu/ai/tools/chatgpt</strong></div>
 
-<small>Source: [byui.edu/ai/tools/chatgpt](https://www.byui.edu/ai/tools/chatgpt)</small>
+<img src="byui-chatgpt-webpage.png" alt="BYU-I ChatGPT Edu webpage" style="width:100%">
 :::
 
 ::: {.column width="42%"}
@@ -40,10 +48,10 @@ Start at the BYU-I ChatGPT page.
 
 1. Select the BYU-I ChatGPT access link.
 2. Choose **Church Educational System**.
-3. Complete the CES sign-in flow with your BYU-I credentials.
+3. Enter your BYU-I **username**@byui.edu. _(Be careful not to use your other email address instead of your username.)_
 
 ::: {.timer-button}
-{{< countdown "3:00" >}}
+{{< countdown "5:00" class="inline" >}}
 :::
 :::
 :::
@@ -85,17 +93,27 @@ Choose the option that matches your situation:
 
 ---
 
-## Install Codex {.center-title background-color="#1a3a5c"}
+## Download Codex from [openai.com/codex](https://openai.com/codex/) {.center-title background-color="#1a3a5c"}
 
-Download Codex from [openai.com/codex](https://openai.com/codex/).
-
-<br>
-
+::: columns
+::: {.column width="36%" .codex-install-copy}
 ::: {.callout-note appearance="simple"}
 Use the installer for your operating system, then open Codex and sign in with the BYU-I ChatGPT account you just connected.
 :::
 
-<img src="codex-app-screenshot.png" alt="Codex app workspace screenshot" style="width:45%; display:block; margin:0.45em auto 0">
+**ChatGPT option:** access your ChatGPT conversations and account features.
+
+**Codex option:** work with the coding agent to create, edit, and run code.
+
+::: {.codex-timer}
+{{< countdown "3:00" class="inline" >}}
+:::
+:::
+
+::: {.column width="64%"}
+<img src="codex-app-screenshot.png" alt="Codex app workspace screenshot" class="codex-app-image">
+:::
+:::
 
 ::: {.notes}
 Codex app screenshot: The New Stack, [IDEclined](https://thenewstack.io/ide-vs-desktop-agent/), accessed September 9, 2026.
@@ -116,12 +134,14 @@ Mac: cmd + shift + p  ·  Windows: ctrl + shift + p
 :::
 
 4. Select **Codex: Open Codex Side Bar**.
+5. Ignore or skip the guide and notifications that appear when the Codex sidebar opens.
 
 <br>
 
 ::: {.callout-tip appearance="simple"}
 If the Codex side bar opens, the VS Code connection is working.
 :::
+
 :::
 
 ::: {.column width="32%"}
@@ -131,6 +151,12 @@ If the Codex side bar opens, the VS Code connection is working.
 </div>
 
 <p class="tool-logo-label">Visual Studio Code + Codex</p>
+
+<p class="sign-in-note"><strong>Sign-in:</strong> If you are already signed in to the Codex app, VS Code should sign you in automatically. Without the Codex app, you will need to sign in.</p>
+
+::: {.vscode-timer}
+{{< countdown "5:00" class="inline" >}}
+:::
 :::
 :::
 

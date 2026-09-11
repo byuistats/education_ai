@@ -116,3 +116,111 @@ $presentation-font-size-root: 32px;
 .reveal .slide blockquote {
   margin: 0.4em 0;
 }
+
+.access-url {
+  margin: 0.15em 0 0.5em;
+  font-size: 0.82em;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #1a3a5c;
+  overflow-wrap: anywhere;
+}
+
+.navigate-url {
+  margin: 0 0 0.45em;
+  font-size: 1.15em;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.navigate-url strong {
+  color: #2a6f97;
+}
+
+.setup-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1em;
+  margin-top: 0.75em;
+}
+
+.setup-link img {
+  width: 175px;
+  height: 175px;
+}
+
+.bitly-url {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2a6f97;
+}
+
+.bitly-instruction {
+  margin-top: 0.25em;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+
+.timer-button {
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+.timer-button .countdown {
+  font-size: 2rem;
+  margin: 0.2em auto;
+}
+
+.reveal section#byu-i-chatgpt-access .timer-button .countdown {
+  position: absolute;
+  left: 0.5em;
+  bottom: 0.8em;
+}
+
+.codex-timer .countdown {
+  font-size: 2rem;
+  margin: 0.2em auto;
+}
+
+.reveal section#download-codex .codex-timer .countdown {
+  position: absolute;
+  left: 0.5em;
+  bottom: 0.8em;
+}
+
+.sign-in-note {
+  margin-top: 1.2em;
+  font-size: 0.7em;
+  line-height: 1.35;
+  color: #ffffff !important;
+}
+
+.vscode-timer {
+  margin-top: 0.75em;
+  text-align: center;
+}
+
+.vscode-timer .countdown {
+  font-size: 2rem;
+  margin: 0.2em auto;
+}
+
+.codex-install-copy {
+  box-sizing: border-box;
+  padding-right: 0.5em;
+}
+
+.codex-install-copy .callout-note {
+  margin: 1em 0;
+}
+
+.codex-app-image {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin: 0 auto;
+}
