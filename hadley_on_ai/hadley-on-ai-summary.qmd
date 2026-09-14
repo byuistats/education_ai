@@ -1,0 +1,207 @@
+---
+title: "y code when ai?"
+subtitle: "Hadley Wickham on coding with AI"
+author: "Discussion Deck"
+institute: "[Read the full article](https://tidydesign.substack.com/p/y-code-when-ai)"
+title-slide-attributes:
+  data-background-color: "#183a57"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: "c/t"
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Hadley Wickham · y code when ai?"
+---
+
+## AI amplifies the user
+
+<div class="lede">The same tool can accelerate shallow work or make more ambitious work possible.</div>
+
+<div class="split-idea">
+<div>
+<span class="label">Low engagement</span>
+<h3>More output, less thought</h3>
+<p>The user hands over judgment and accepts the first plausible answer.</p>
+</div>
+<div>
+<span class="label">High engagement</span>
+<h3>Stronger ideas and code</h3>
+<p>The user asks AI to challenge assumptions, inspect the work, and keep improving it.</p>
+</div>
+</div>
+
+<div class="big-claim">What AI amplifies depends on what the user brings.</div>
+
+::: {.source-note}
+Hadley Wickham, [“y code when ai?”](https://tidydesign.substack.com/p/y-code-when-ai), July 24, 2026.
+:::
+
+## Beyond the chat window
+
+<div class="metric-layout">
+<div>
+<div class="metric">90%</div>
+<div class="metric-label">of the value may be missing</div>
+</div>
+<div class="metric-copy">
+<span class="label">A different way of working</span>
+<h3>Put the model where the code and data already live</h3>
+<p>A coding environment lets the model run code, inspect results, and use the project’s actual context. The human no longer carries errors and snippets between separate tools.</p>
+</div>
+</div>
+
+<div class="big-claim">The working environment changes what the model can do.</div>
+
+::: {.source-note}
+Wickham contrasts web chatbots with tools that let an LLM write and run code inside Positron, RStudio, or a terminal. The 90% figure is Wickham’s estimate.
+:::
+
+## The feedback loop
+
+<div class="lede">Useful coding agents do more than generate a first draft. They can test the draft against reality.</div>
+
+<div class="sequence">
+<div><strong>01 · Write</strong><span>Draft the code.</span></div>
+<div><strong>02 · Run</strong><span>Execute it in context.</span></div>
+<div><strong>03 · Inspect</strong><span>Read errors and output.</span></div>
+<div><strong>04 · Revise</strong><span>Use the feedback.</span></div>
+</div>
+
+<div class="big-claim">Execution gives an imperfect model a way to recover.</div>
+
+::: {.source-note}
+Wickham emphasizes execution, error messages, documentation, and tests as sources of feedback for the model.
+:::
+
+## Software engineering and data science
+
+<div class="lede">The two fields offer different kinds of feedback.</div>
+
+<div class="compare">
+<div>
+<span class="label">Software engineering</span>
+<h3>The expected behavior is known</h3>
+<p>Unit tests can state what a function should return. The model can compare its work against a concrete target.</p>
+</div>
+<div>
+<span class="label">Data science</span>
+<h3>The answer is the object of discovery</h3>
+<p>No unit test can decide whether a plot is informative or a model makes sense in context. The analyst must supply that judgment.</p>
+</div>
+</div>
+
+<div class="big-claim">Data science requires more human check-ins.</div>
+
+::: {.source-note}
+Wickham proposes data dictionaries and multiple representations of the work as partial checks when the correct answer is unknown.
+:::
+
+## Key quotes {.section-slide .dark-slide background-color="#183a57"}
+
+<div class="section-number">06</div>
+<div class="section-deck">Six passages selected from the article. Together they move from the amplifier metaphor to Wickham’s final argument for engaged, high-quality work.</div>
+
+::: {.source-note}
+All quotations on the following slides were selected in `my_notes.md`.
+:::
+
+## AI as an amplifier {.quote-slide background-color="#fbf8f2"}
+
+<div class="quote-layout">
+<div class="quote-index">01</div>
+<div>
+
+> At the end of the day, I think the best metaphor for AI is that it’s an amplifier. If you want to be lazy, you can be more lazy with less effort than at any other time in human history; you can solve problems with zero intellectual engagement. But you don’t have to do that, because AI can also amplify the best of you. You can use it to go deeper, to engage more in any of the domains that you’re working in.
+
+<div class="quote-context">The tool magnifies the quality of the user’s engagement.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s “Big picture” section.
+:::
+
+## The limits of chat {.quote-slide .dark-slide .quote-dense background-color="#183a57"}
+
+<div class="quote-layout">
+<div class="quote-index">02</div>
+<div>
+
+> But the most important thing I want to tell you is that if your primary way of using an LLM is through a chatbot interface on the web or your phone, you are missing out on at least 90% of the goodness. Chatbots on the web are great for casual exploration, the questions that come up in your personal life. I use them all the time — to create recipes to use up leftovers in the fridge, to answer questions I have about gardening, and to look up random facts I want to learn more about. But if you’re using them for data science or programming, you’re missing out on 90% of what they can do.
+
+<div class="quote-context">Technical work benefits when the model can access the working environment.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s “Practical advice” section.
+:::
+
+## Feedback over brilliance {.quote-slide .blue-slide .quote-dense background-color="#287383"}
+
+<div class="quote-layout">
+<div class="quote-index">03</div>
+<div>
+
+> It’s not that LLMs are necessarily always that smart: sometimes they show astonishing flashes of insight and intelligence, and other times they’re just crushingly stupid. But when you give them a feedback loop, even when they’re being dumb, they’ll just grind their way through, doing one stupid thing after another, and eventually make their way to an answer — in a very slow and painful way, but at least it’s them doing it, not you as a human.
+
+<div class="quote-context">A reliable loop can matter more than a brilliant first response.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s “Practical advice” section.
+:::
+
+## Discovery without a known answer {.quote-slide .quote-dense background-color="#fbf8f2"}
+
+<div class="quote-layout">
+<div class="quote-index">04</div>
+<div>
+
+> I think this is the biggest difference between software engineering and data science, and one reason AI is being adopted a little more slowly in data science. When you’re a software engineer, you typically know what you expect to see — you have some vision in your head of what a function is going to do, what the code is going to reveal. But very often when you’re doing data science, you’re doing it precisely because you genuinely don’t know the answer. That’s why you’re doing data science, why you’re doing statistics: you’re trying to answer a question that maybe no one has answered before. So in data science, we don’t have this feedback, and I’ll come back to what we might have instead.
+
+<div class="quote-context">When the target is unknown, the analyst remains part of the feedback loop.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s discussion of software engineering and data science.
+:::
+
+## Engagement shapes the outcome {.quote-slide .dark-slide .quote-very-dense background-color="#183a57"}
+
+<div class="quote-layout">
+<div class="quote-index">05</div>
+<div>
+
+> So, to sum up: I’ve given you this big-picture view. The genie’s out of the bottle, and we can’t stuff it back in. But it’s not all bad news, because at least for me, working with AI can be tremendously empowering and fun. A lot of that centers around changing my self-identity: what it means to be a software developer and a data scientist, introducing a new collaborator that helps me write a lot of code.
+>
+> But you still absolutely get out what you put in. It’s more important than ever to sweat the details, to go deep, to stay intellectually engaged. And I believe you can use that to produce the best work of your career.
+
+<div class="quote-context">AI changes the workflow without removing human ownership.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s conclusion.
+:::
+
+## The work worth caring about {.quote-slide background-color="#fbf8f2"}
+
+<div class="quote-layout">
+<div class="quote-index">06</div>
+<div>
+
+> But for the stuff that you really care about, that’s important to you and your professional development, you can go deep on quality. You can use AI to pick apart your ideas, to pick apart your code, and produce high-quality work. Because at the end of the day, AI is an amplifier. And I really urge you, to the best of your abilities, to use it to amplify the best parts of you, the most human parts of you — not the laziest part.
+
+<div class="quote-context">Wickham’s final recommendation: use AI to strengthen the work that matters.</div>
+</div>
+</div>
+
+::: {.source-note}
+Selected quote from Wickham’s conclusion.
+:::
