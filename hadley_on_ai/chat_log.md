@@ -53,3 +53,9 @@
 **Prompt:** Add the slide deck to `index.md` and `README.md`.
 
 **Response:** Added the rendered presentation to the project index with a title-slide thumbnail and added the editable Quarto source to the README’s slide-deck list.
+
+## Footer spacing
+
+**Prompt:** Fix the overlap between the source footnotes and the text at the bottom of the slides.
+
+**Response:** Moved source notes into a separate band above the RevealJS footer, reduced their maximum width, rerendered the deck, and checked representative summary and quote slides.

@@ -1,0 +1,241 @@
+---
+title: "The Future of the American University"
+subtitle: "Cornell's case for judgment in an age of disruption"
+author: "Discussion Deck"
+institute: "[Read the full report](https://provost.cornell.edu/_files/initiatives/future-of-the-american-university-full-report.pdf)"
+title-slide-attributes:
+  data-background-color: "#6f1d25"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: "c/t"
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Cornell · Future of the American University"
+---
+
+## The crisis is structural
+
+<div class="lede">The committee began with three visible disruptions and found a broader institutional problem.</div>
+
+<div class="pressure-grid">
+<div>
+<span class="label">Artificial intelligence</span>
+<h3>Outputs can hide missing formation</h3>
+<p>AI can imitate knowledge work while students bypass the practices that develop understanding.</p>
+</div>
+<div>
+<span class="label">Public funding</span>
+<h3>The postwar compact is under strain</h3>
+<p>Research funding has become less stable while political pressure threatens independent inquiry.</p>
+</div>
+<div>
+<span class="label">Public trust</span>
+<h3>Confidence fell to 38%</h3>
+<p>Cost, admissions, campus culture, and uncertainty about value have weakened the university's standing.</p>
+</div>
+</div>
+
+<div class="big-claim">These pressures will not resolve themselves. Universities must choose what they are for.</div>
+
+::: {.source-note}
+Cornell Committee on the Future of the American University, report pp. 9–17. The report cites Gallup's 2026 confidence measure.
+:::
+
+## What employers want from graduates
+
+<div class="lede">Employers questioned less whether graduates knew enough than whether they could apply what they knew.</div>
+
+<div class="employer-layout">
+<div class="employer-summary">
+<span class="label">The report's diagnosis</span>
+<div class="employer-quote">Credentialed,<br>but underprepared</div>
+<p>Employers focused on the capacities that let specialized knowledge work inside complex organizations.</p>
+</div>
+<div class="capability-list">
+<div><strong>Adaptability</strong><span>Work through uncertainty and problems without clear answers.</span></div>
+<div><strong>Resilience</strong><span>Absorb critical feedback and recover from setbacks.</span></div>
+<div><strong>Communication</strong><span>Explain constraints, expectations, and changing plans clearly.</span></div>
+<div><strong>Collaboration</strong><span>Compromise with people who hold different perspectives.</span></div>
+<div><strong>Project management</strong><span>Manage deadlines and competing commitments.</span></div>
+</div>
+</div>
+
+<div class="big-claim employer-claim">Students often optimize for grades and résumé signals that do not develop these capacities.</div>
+
+::: {.source-note}
+Report pp. 29–36. Employer feedback is corroborated by the National Association of Colleges and Employers survey cited on p. 29.
+:::
+
+## Judgment is the organizing idea {.dark-slide background-color="#243746"}
+
+<div class="quote-block">
+
+> “Judgment is the skill that learning produces.”
+
+</div>
+
+<div class="judgment-layout">
+<div>
+<span class="label">What it requires</span>
+<h3>Evidence, patience, and uncertainty</h3>
+<p>Judgment develops when people examine evidence, test ideas, revise conclusions, and remain open to challenge.</p>
+</div>
+<div>
+<span class="label">Why it matters now</span>
+<h3>Fluent output is easy to produce</h3>
+<p>The scarce capacity is deciding what deserves belief, what action fits the situation, and what consequences matter.</p>
+</div>
+</div>
+
+<div class="big-claim">The report treats judgment as the university's civic and educational contribution.</div>
+
+::: {.source-note}
+Report pp. 3–4 and 23–25.
+:::
+
+## One institution, five modes of learning
+
+<div class="lede">Cornell's answer to fragmentation is an integrated learning ecosystem.</div>
+
+<div class="five-modes">
+<div><strong>Teach</strong><span>Transmit established knowledge</span></div>
+<div><strong>Discover</strong><span>Generate new understanding</span></div>
+<div><strong>Create</strong><span>Make and interpret human expression</span></div>
+<div><strong>Deliberate</strong><span>Reason across disagreement</span></div>
+<div><strong>Engage</strong><span>Apply knowledge with communities</span></div>
+</div>
+
+<div class="big-claim">The value comes from integration: each mode changes what the others can produce.</div>
+
+<p class="supporting-copy">The report argues that no laboratory, museum, online platform, or nonprofit combines these forms of learning within one community in the same way.</p>
+
+::: {.source-note}
+Report pp. 23–25.
+:::
+
+## Whole-person undergraduate education
+
+<div class="lede">Intellectual training becomes judgment when students also learn how to act with and around other people.</div>
+
+<div class="formation-band">
+<div>
+<span class="label">Intellectual</span>
+<h3>Reason with evidence</h3>
+<p>Frame questions, test claims, and work through ambiguity.</p>
+</div>
+<div>
+<span class="label">Social</span>
+<h3>Navigate difference</h3>
+<p>Build relationships, deliberate, and remain accountable to others.</p>
+</div>
+<div>
+<span class="label">Personal</span>
+<h3>Develop an internal compass</h3>
+<p>Respond to setbacks, know one's values, and make meaning.</p>
+</div>
+</div>
+
+<div class="big-claim">Faculty and staff become co-educators across classroom and campus life.</div>
+
+::: {.source-note}
+Report pp. 36–47 and Appendix G, p. 219.
+:::
+
+## Practice at a human scale
+
+<div class="metric-layout">
+<div>
+<div class="metric-word">Practice</div>
+<div class="metric-label">Sound judgment grows through use</div>
+</div>
+<div class="metric-copy">
+<span class="label">The proposed learning environment</span>
+<h3>Students demonstrate, build, argue, and solve problems</h3>
+<p>Projects, seminars, studios, laboratories, field work, internships, and dialogue put knowledge under real constraints.</p>
+</div>
+</div>
+
+<div class="split-idea compact-pair">
+<div>
+<h3>Known by other people</h3>
+<p>Small settings create personal accountability and make intellectual risk possible.</p>
+</div>
+<div>
+<h3>Supported through setbacks</h3>
+<p>Honest feedback becomes part of development when the institution prepares students to recover.</p>
+</div>
+</div>
+
+::: {.source-note}
+Report pp. 44–54.
+:::
+
+## AI can imitate the product while bypassing formation {.dark-slide background-color="#6f1d25"}
+
+<div class="compare ai-compare">
+<div>
+<span class="label">The visible product</span>
+<h3>An essay, analysis, or literature review</h3>
+<p>AI can generate work that looks polished and complete.</p>
+</div>
+<div>
+<span class="label">The human formation</span>
+<h3>Reading, writing, reasoning, and revision</h3>
+<p>The effort behind the product develops understanding and the capacity to judge.</p>
+</div>
+</div>
+
+<div class="big-claim">Students need judgment about when to use AI, how to assess it, and when the struggle itself is the learning.</div>
+
+<p class="supporting-copy light-copy">The report supports discipline-specific AI literacy, intentional technology policies, and a center for innovative and responsible AI research.</p>
+
+::: {.source-note}
+Report pp. 10–12, 47, 53–54, 96–98, and 175–76.
+:::
+
+## Academic civics is institutional infrastructure {.dark-slide background-color="#243746"}
+
+<div class="lede light-copy">A university needs members who understand how the institution works and what they owe one another.</div>
+
+<div class="civics-layout">
+<div>
+<span class="label">Academic civics</span>
+<h3>Membership as a practiced responsibility</h3>
+<p>Service, institutional knowledge, and sustained participation create a common enterprise rather than a collection of units.</p>
+</div>
+<div>
+<span class="label">Shared governance</span>
+<h3>Judgment through participation</h3>
+<p>Transparent deliberation gives faculty, staff, students, trustees, and leaders ways to learn from one another before decisions harden.</p>
+</div>
+</div>
+
+<div class="big-claim">Institutions draw on relationships during a crisis. They cannot create those relationships in the middle of one.</div>
+
+::: {.source-note}
+Report pp. 145–76.
+:::
+
+## A question to carry forward
+
+<div class="question-box">
+What would our institution change if cultivating sound judgment became the test for curriculum, technology, and governance?
+</div>
+
+<div class="discussion-pair">
+<div>
+<span class="label">For educators</span>
+<p>Where do students practice judgment in front of other people, with real feedback and consequences?</p>
+</div>
+<div>
+<span class="label">For the institution</span>
+<p>Which current structures integrate learning, and which ones keep its parts separate?</p>
+</div>
+</div>
+
+::: {.source-note}
+Primary source: Cornell University, *Report of the Committee on the Future of the American University*, September 22, 2026. Media overview: Douglas Belkin, “In 200-Page Report, Cornell Confronts the Crisis in American Higher Education,” *The Wall Street Journal*, September 22, 2026.
+:::
