@@ -10,5 +10,6 @@ Short presentations and discussion materials about artificial intelligence in ed
 - [Why AI Works](why_ai_works/why-ai-works-slides.qmd) - Explains large language models through nonlinear dynamics, scaling laws, emergent abilities, grokking, criticality, in-context learning, and the manifold hypothesis.
 - [y code when ai?](hadley_on_ai/hadley-on-ai-summary.qmd) - Summarizes Hadley Wickham’s perspective on AI as an amplifier, coding-agent feedback loops, and the continuing role of human judgment in data science.
 - [The Future of the American University](cornell_report/cornell-report-summary.qmd) - Summarizes Cornell’s case for judgment, integrated learning, public trust, and institutional reform in an age of AI disruption.
+- [Hopeless but Hoping in the AI Age](hope_education_ai/faith-and-hope-slides.qmd) - Uses Joseph M. Spencer's *For Zion* to distinguish hope from desperation, examine what AI exposes in education, and consider more hopeful forms of teaching and learning.
 
 The rendered presentations are linked from the [project presentation GitHub Pages](https://byuistats.github.io/education_ai/).

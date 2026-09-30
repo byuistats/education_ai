@@ -1,0 +1,3 @@
+- Use https://hadley.github.io/bananarama/index.html to make nice pictures for the slides.
+- https://data-dict.tidyverse.org/ if we ever need data dictionaries
+- 
