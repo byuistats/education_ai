@@ -1,6 +1,6 @@
 ---
 title: "Hopeless but Hoping in the AI Age"
-subtitle: "Joseph Spencer’s For Zion, chapter 2, and AI in education"
+subtitle: "Joseph Spencer’s *For Zion* and the future of learning"
 author: "Discussion Deck"
 title-slide-attributes:
   data-background-color: "#244138"
@@ -18,7 +18,7 @@ footer: "For Zion · Faith, hope, and AI in education"
 ## Today’s path
 
 <div class="outline-list">
-<div><span>01</span><p>Spencer’s theology of hope<small><em>For Zion</em> · Abraham’s faith · Two kinds of hope · Hope at the limit</small></p></div>
+<div><span>01</span><p>Spencer’s theology of hope<small><em>For Zion</em> · Romans 4:18 · Abraham’s faith · Two kinds of hope</small></p></div>
 <div><span>02</span><p>The turn to AI and education<small>A question for education · A different world · What AI exposes</small></p></div>
 <div><span>03</span><p>Desperation and impossibility<small>Desperation in the AI debate · The hunt for the procedure · Honest impossibility</small></p></div>
 <div><span>04</span><p>Hopeful educational practice<small>Older forms · Faith anchors purpose · A question to carry forward</small></p></div>
@@ -33,8 +33,8 @@ footer: "For Zion · Faith, hope, and AI in education"
 <div class="book-copy">
 <span class="label">A Mormon Theology of Hope · 2014</span>
 <h3>What does it mean to hope for Zion?</h3>
-<p>Spencer reads Paul’s letter to the Romans to clarify the nature of Christian hope, then connects that account to Restoration scripture and the continuing work of consecration.</p>
-<p>The book asks how hope in a transformed future changes our responsibility for the world we inhabit now.</p>
+<p>Spencer reads Romans 4,5, & 8 to clarify Christian hope, then connects that account to Restoration scripture and the work of consecration.</p>
+<p>The book asks how hope for a transformed future changes our responsibility now.</p>
 </div>
 </div>
 
@@ -42,51 +42,56 @@ footer: "For Zion · Faith, hope, and AI in education"
 Joseph M. Spencer, *For Zion: A Mormon Theology of Hope* (Greg Kofford Books, 2014). Book description and cover: [Greg Kofford Books](https://gregkofford.com/collections/scripture/products/for-zion-a-mormon-theology-of-hope).
 :::
 
-## Abraham's faith is defined by hope
+## Romans 4:18 centers the conversation
 
-<div class="lede">Romans 4 reads Genesis 15 as an account of the faith that God reckons as righteousness.</div>
+<div class="lede">In Romans 4, Paul uses Abraham to show how faith rests on God’s promise when the present offers no reason for hope.</div>
 
-<div class="scripture-block">
+<div class="scripture-compare">
+<div>
+<span class="label">King James Version</span>
+<blockquote>“Who against hope believed in hope, that he might become the father of many nations, according to that which was spoken, So shall thy seed be.”</blockquote>
+</div>
+<div>
+<span class="label">New Living Translation</span>
+<blockquote>“Even when there was no reason for hope, Abraham kept hoping, believing that he would become the father of many nations. For God had said to him, ‘That’s how many descendants you will have!’”</blockquote>
+</div>
+</div>
+
+<div class="big-claim">Hopeless but hoping, Abraham believed he would become “the father of many nations.”
+</div>
+
+<div class="phrase-translation"><span class="label">Joseph Spencer’s phrase translation</span></div>
+
+::: {.notes}
+Romans 4 reads Genesis 15 as an account of the faith that God reckons as righteousness.
 
 > Hopeless but hoping, Abraham believed he would become “the father of many nations.”
 
-</div>
+The promise looked impossible. Abraham and Sarah could not produce the promised future through their own capacities.
 
-<div class="split-idea">
-<div>
-<span class="label">The situation</span>
-<h3>The promise looked impossible</h3>
-<p>Abraham and Sarah could not produce the future that God had promised through their own natural capacities.</p>
-</div>
-<div>
-<span class="label">The response</span>
-<h3>Hope gave faith consistency</h3>
-<p>Abraham trusted that God could fulfill the promise even when the present offered no visible path to it.</p>
-</div>
-</div>
+Hope gave faith consistency. Abraham trusted God to fulfill the promise when the present offered no visible path.
 
-<div class="big-claim">Paul's concern is not faith in the abstract, but faith strengthened by hope.</div>
+For Paul, hope gives faith its strength.
 
-::: {.source-note}
-Joseph M. Spencer, *For Zion: A Mormon Theology of Hope* (Salt Lake City: Greg Kofford Books, 2014), ch. 2, “Faith and Hope.”
+Source: Joseph M. Spencer, *For Zion* (Salt Lake City: Greg Kofford Books, 2014), ch. 2, “Faith and Hope.”
 :::
 
-## Two kinds of hope
+## Hope for my future or God's
 
 <div class="compare">
 <div>
 <span class="label">Everyday hope</span>
 <h3>My desired future</h3>
-<p>I expect my plans, fantasies, or claims to honor to succeed. The future remains organized around what I want.</p>
+<p>I expect my plans or claims to succeed. The future stays organized around what I want.</p>
 </div>
 <div>
 <span class="label">Theological hope</span>
 <h3>God's promised future</h3>
-<p>I release control over the outcome and trust God's promise to be fulfilled in the way God chooses.</p>
+<p>I release control over the outcome and trust God’s promise to be fulfilled in God’s way.</p>
 </div>
 </div>
 
-<div class="big-claim">Faith redirects hope away from self-importance and toward trust in God.</div>
+<div class="big-claim">Faith redirects hope from self-importance toward trust in God.</div>
 
 ::: {.source-note}
 Spencer, *For Zion*, ch. 2, “Faith and Hope.”
@@ -101,144 +106,137 @@ Spencer, *For Zion*, ch. 2, “Faith and Hope.”
 </div>
 <div class="metric-copy">
 <span class="label">Objective hopelessness</span>
-<h3>The obstacle is not merely my lack of ingenuity</h3>
-<p>Genuine hope faces the situation without pretending that another technique, procedure, or burst of effort will solve it.</p>
+<h3>The obstacle is more than my ingenuity</h3>
+<p>Genuine hope faces the situation without pretending that another technique or burst of effort will solve it.</p>
 </div>
 </div>
 
-<div class="big-claim">Hope does not deny reality. It refuses to make present reality the final measure of possibility.</div>
+<div class="big-claim">Hope faces reality without treating it as the final measure of possibility.</div>
 
 ::: {.source-note}
 Spencer, *For Zion*, ch. 2, “Faith and Hope.”
 :::
 
-## A question for education {.transition-slide background-color="#244138"}
+## Love turns hope into shared work {.love-slide}
+
+<div class="love-content">
+<blockquote class="love-quote">
+<p>“hope becomes, instead, a <strong>loving confidence</strong> in the work to be accomplished by <strong>all who share in God’s vision.</strong>”</p>
+</blockquote>
+
+<p class="love-application">For education: hope takes shape in work we share with learners and educators.</p>
+</div>
+
+<div class="love-scripture">
+<span class="label">Romans 5:3–5 · King James Version</span>
+<p><sup>3</sup> And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; <sup>4</sup> And patience, experience; and experience, hope:</p>
+<p><sup>5</sup> And <strong>hope maketh not ashamed;</strong> because <strong>the love of God</strong> is shed abroad in our hearts by the Holy Ghost which is given unto us.</p>
+</div>
+
+::: {.source-note .love-source}
+Joseph M. Spencer, *For Zion*, ch. 3, “Hope and Love.”
+:::
+
+::: {.notes}
+The previous slide names the limit of the present order. Chapter 3 moves from that limit to the work of transformation: God enlists faithful, hopeful people in making a different world possible.
+
+Paul’s argument moves from Abraham in Romans 4 to the connection between faith, hope, and love in Romans 5. In Romans 5:5, hope does not put us to shame because God’s love has been poured into our hearts through the Holy Spirit.
+
+Spencer argues that hope grows through the difficulties of this work. Love then transforms it into partnership with God, an ongoing conversation about the world’s possibilities. This keeps hope from becoming confidence in our own independent abilities.
+
+For educators, this account invites an analogy: learning can be shared work with students, sustained by conversation about what becomes possible together. This is an application of Spencer’s account to education, rather than a claim that technological change fulfills God’s promise.
+
+Scripture source: [Romans 5:3–5, KJV](https://www.biblegateway.com/passage/?search=Romans+5%3A3-5&version=KJV).
+
+Source: Joseph M. Spencer, *For Zion: A Mormon Theology of Hope* (Greg Kofford Books, 2014), ch. 3, “Hope and Love.”
+:::
+
+## Hope and the future of learning {.transition-slide background-color="#244138"}
 
 <div class="transition-question">
-How can Spencer’s reading of hope help us respond to AI in education?
+How can Spencer’s account of hope reshape education’s response to AI?
 </div>
 
 <div class="transition-subtitle">
-What changes when we stop trying to restore the old order and become open to better forms of learning?
+What becomes possible when restoring the older order stops being the goal?
 </div>
 
-## A different world becomes possible {.ai-slide background-color="#e8f0eb"}
+## Hope opens a different future {.ai-slide background-color="#e8f0eb"}
 
-<div class="world-claim">The world is not<br>as it must always be.</div>
+<div class="world-claim">The world can<br>become otherwise.</div>
 
 <div class="world-copy">
-<p>Despair accepts the world's limits and gives up. Desperation searches frantically for a hidden route inside those limits.</p>
-<p>Hope trusts that a new path can cross the distinctions that organize the present “scheme of things.”</p>
+<p>Despair accepts the world’s limits and gives up. Desperation searches for a hidden route inside them.</p>
+<p>Hope trusts that learning can take a new form beyond the present “scheme of things.”</p>
 </div>
 
 ## AI exposes the old order {.ai-slide background-color="#e8f0eb"}
 
-<div class="lede">AI did not create every weakness in education. It made several old assumptions harder to defend.</div>
+<div class="lede">AI made several old assumptions in education harder to defend.</div>
 
 <div class="three-ways">
 <div>
 <span class="label">Evidence</span>
 <h3>The take-home essay</h3>
-<p>A finished product can no longer establish who did the thinking.</p>
+<p>A finished product no longer establishes who did the thinking.</p>
 </div>
 <div>
 <span class="label">Effort</span>
 <h3>Homework completion</h3>
-<p>Submitted work offers weaker evidence of the effort behind it.</p>
+<p>Submitted work gives weaker evidence of the effort behind it.</p>
 </div>
 <div>
 <span class="label">Authority</span>
 <h3>The information gatekeeper</h3>
-<p>Teachers no longer control students’ access to explanations and examples.</p>
+<p>Teachers no longer control access to explanations and examples.</p>
 </div>
 </div>
 
-<div class="big-claim">The present scheme of things was already passing away. AI made that movement visible.</div>
+<div class="big-claim">AI did not create every weakness in education. It made the old order visible.</div>
 
-## Desperation in the AI debate {.ai-slide background-color="#e8f0eb"}
+## Desperation seeks a procedure to maintain the old order {.ai-slide background-color="#e8f0eb"}
 
-<div class="lede">Opposing positions can share the same hidden commitment to preserving control.</div>
+<div class="lede">Opposing positions can share the same commitment to restoring control.</div>
 
 <div class="compare">
 <div>
 <span class="label">Frantic crackdown</span>
 <h3>Find the perfect <span class="phrase-highlight">defense</span></h3>
-<p>Detectors, lockdown browsers, and increasingly elaborate rules promise to restore the old evidence of learning.</p>
+<p>Detectors and lockdown browsers promise to restore the old evidence of learning.</p>
 </div>
 <div>
 <span class="label">Frantic adoption</span>
 <h3>Find the perfect <span class="phrase-highlight">integration</span></h3>
-<p>Tools and frameworks promise mastery of the disruption while leaving the old purposes and structures untouched.</p>
+<p>Tools and frameworks promise control while leaving old purposes and structures untouched.</p>
 </div>
 </div>
 
-<div class="big-claim spacious-claim">Both positions can become a <span class="phrase-highlight">hunt</span> for the procedure that will <span class="phrase-highlight">save</span> the <span class="phrase-highlight">existing system</span>.</div>
+<div class="big-claim spacious-claim">Both positions can become a <span class="phrase-highlight">hunt</span> for a procedure that will <span class="phrase-highlight">save the existing system</span>.</div>
 
-## The hunt for the procedure {.ai-slide background-color="#e8f0eb"}
-
-<div class="metric-layout">
-<div>
-<div class="metric-word">The fix</div>
-<div class="metric-label">must be somewhere</div>
-</div>
-<div class="metric-copy">
-<span class="label">Desperation</span>
-<h3>“There is some way out, but I cannot find it”</h3>
-<p>The right detector. The right policy. The AI-proof assignment. The perfect framework.</p>
-<p>When each attempt fails, teachers interpret an institutional transition as personal inadequacy.</p>
-</div>
-</div>
-
-<div class="big-claim">The search produces exhaustion because it asks technique to restore a certainty that has disappeared.</div>
-
-## Honest impossibility opens hope {.ai-slide background-color="#e8f0eb"}
+## Despair names what the old order can't sustain {.ai-slide background-color="#e8f0eb"}
 
 <div class="order-layout">
 <div>
 <span class="order-number">01</span>
 <span class="label">Admission</span>
-<h3>The old evidence cannot be restored</h3>
-<p>A take-home essay cannot reliably verify who did the thinking. No detection procedure can recreate the former assumption of authorship.</p>
+<h3>The old evidence cannot return</h3>
+<p>A take-home essay cannot reliably verify who did the thinking. No detector can recreate the former assumption of authorship.</p>
 </div>
 <div>
 <span class="order-number">02</span>
 <span class="label">Opening</span>
-<h3>Learning can take another form</h3>
-<p>Once restoration stops being the goal, educators can redesign learning around better evidence and deeper human relationships.</p>
+<h3>That admission opens hope</h3>
+<p>Once restoring stops being the goal, educators can redesign learning around better evidence and deeper relationships.</p>
 </div>
 </div>
 
-<div class="big-claim">The admission is not defeat. It is the point where hope breaks in.</div>
-
-## Older forms become newly useful {.ai-slide background-color="#e8f0eb"}
-
-<div class="lede">A hopeful response does not abandon education’s tradition. It recovers practices already present within it.</div>
-
-<div class="three-ways">
-<div>
-<span class="label">Dialogue</span>
-<h3>Thinking becomes visible</h3>
-<p>Questions and follow-up reveal how a learner understands and revises an idea.</p>
-</div>
-<div>
-<span class="label">Oral defense</span>
-<h3>Students explain choices</h3>
-<p>A learner connects the submitted work to reasons, evidence, and judgment.</p>
-</div>
-<div>
-<span class="label">Apprenticeship</span>
-<h3>Work develops in community</h3>
-<p>Teachers observe process, coach decisions, and see growth over time.</p>
-</div>
-</div>
-
-<div class="big-claim">AI can prompt a return to learning practices that never depended on isolated output alone.</div>
+<div class="big-claim">Hope begins where restoring ends.</div>
 
 ## Faith anchors educational purpose {.ai-slide background-color="#e8f0eb"}
 
 <div class="scripture-block">
 
-> “Seek learning, even by study and also by faith.” — Doctrine and Covenants 88:118
+> “Seek learning, even by study and also by faith.” Doctrine and Covenants 88:118
 
 </div>
 
@@ -246,30 +244,76 @@ What changes when we stop trying to restore the old order and become open to bet
 <div>
 <span class="label">Faith transforms hope</span>
 <h3>Purpose guides our response to AI</h3>
-<p>Education forms persons rather than merely producing assignments. Faith keeps hope oriented toward that purpose and supplies the measure for judging technology.</p>
+<p>Education forms persons rather than producing assignments. Faith keeps hope oriented toward that purpose and gives us a measure for judging technology.</p>
 </div>
 <div>
 <span class="label">Hope strengthens faith</span>
 <h3>Purpose becomes a possible future</h3>
-<p>Hope turns belief in education’s purpose into confidence that learning can take new forms without losing what matters most.</p>
+<p>Hope turns belief in education’s purpose into trust that learning can take new forms without losing what matters most.</p>
 </div>
 </div>
 
-<div class="big-claim">Faith becomes genuinely faithful as hope becomes genuinely hopeful.</div>
+<div class="big-claim">Faith keeps hope about learning anchored in purpose.</div>
 
-## A question to carry forward {.ai-slide background-color="#e8f0eb"}
+## AI can refocus LOVE in education {.ai-slide .love-ai-slide background-color="#e8f0eb"}
+
+::: {.love-thesis}
+> AI serves learning when it deepens the work educators and learners share.
+:::
+
+<div class="three-ways">
+<div>
+<span class="label">Dialogue</span>
+<h3>Explore possibilities together</h3>
+<p>Teachers and students question AI’s answers and consider what those answers miss.</p>
+</div>
+<div>
+<span class="label">Oral defense</span>
+<h3>Students explain choices</h3>
+<p>Students explain how they used AI and give reasons for accepting or revising its suggestions.</p>
+</div>
+<div>
+<span class="label">Apprenticeship</span>
+<h3>Work develops in community</h3>
+<p>Educators work alongside learners as they use AI, offering feedback and practicing judgment together.</p>
+</div>
+</div>
+
+::: {.love-evidence}
+> “Love [is] more than a mere emotion; it is a way of **working together to change the world**.”
+
+> “Love is a consistently attentive way of living in which one is overwhelmed with happiness at realizing that **two different experiences can be shared** [in an] unending joint journey.”
+:::
+
+::: {.source-note}
+Spencer, *For Zion*, ch. 3, “Hope and Love.” Educational application.
+:::
+
+::: {.notes}
+Chapter 3 describes love as working together to change the world and as an ongoing conversation about the world’s possibilities. Hope becomes a loving confidence in work shared by those who participate in God’s vision.
+
+Applied to education, this directs our response to AI toward shared learning. Dialogue, oral defense, and apprenticeship are established practices through which teachers and students can undertake that work together.
+
+In dialogue, a generated answer becomes material for inquiry: What does it help us see? What does it overlook? In an oral defense, students explain their choices and evaluate suggestions with others. In apprenticeship, a teacher accompanies the learner’s process and develops judgment through feedback.
+
+The educational examples are our application of Spencer’s theology. His chapter addresses partnership with God, rather than AI. The preceding slide establishes the educational purposes that guide this work.
+
+Source: Joseph M. Spencer, *For Zion*, ch. 3, “Hope and Love”; highlighted passages in chapters/ch3/IMG_0385.PNG and IMG_0386.PNG.
+:::
+
+## Questions for educators {.ai-slide background-color="#e8f0eb"}
 
 <div class="question-box">
-Where has our response to AI mistaken desperation for hope by assuming that education’s future must follow the rules of its present?
+What educational purpose should guide the classroom we build in response to AI?
 </div>
 
 <div class="discussion-pair">
 <div>
 <span class="label">Personal</span>
-<p>Which disappearing classroom practice feels like evidence of personal inadequacy, and what changes if it is not?</p>
+<p>Which practice are you trying to preserve, and what purpose beneath it still matters?</p>
 </div>
 <div>
 <span class="label">Collective</span>
-<p>What form of dialogue, oral defense, mentorship, or apprenticeship could make learning visible again?</p>
+<p>How could teachers and students redesign learning so that thinking becomes visible through shared work?</p>
 </div>
 </div>
