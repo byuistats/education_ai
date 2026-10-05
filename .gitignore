@@ -9,3 +9,13 @@ _site/
 
 # Operating system metadata
 .DS_Store
+
+# Source articles and screenshots stay local (copyrighted / large)
+*.pdf
+*.[Pp][Nn][Gg]
+# ...except the title-slide thumbnails shown on the GitHub Pages index
+!**/lead-slide.png
+
+# Quarto render scratch
+**/.quarto/
+**/*.quarto_ipynb

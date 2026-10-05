@@ -1,0 +1,238 @@
+---
+title: "Don’t Write With AI, Say People Who Write With AI"
+subtitle: "“Your ‘cheating’ is their ‘assistive tool.’”"
+author: "Will Oremus · The Atlantic · October 3, 2026"
+institute: "[Read the article](https://www.theatlantic.com/search/?q=Don%27t+Write+With+AI%2C+Say+People+Who+Write+With+AI)"
+title-slide-attributes:
+  data-background-color: "#22252b"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: "c/t"
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Oremus · Don’t Write With AI, Say People Who Write With AI"
+---
+
+## Where is your line?
+
+<div class="subtitle-line">Each of us has to decide what AI may and may not do in our own work.</div>
+
+<div class="pull-quote">
+<blockquote>“I’ve found that having a <span class="hl">personal red line</span> is both useful and clarifying”</blockquote>
+<div class="attribution">— Will Oremus</div>
+</div>
+
+<span class="label" style="margin-top:1.2em">Our question</span>
+
+<div class="discussion">What would you let AI do in your writing, and what would you never hand over?</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+“I too have experimented with using AI as a research tool in my writing. But The Atlantic has a strict policy against the use of AI-generated prose, and so do I. I’ve found that having a personal red line is both useful and clarifying: I might ask a chatbot questions, get its feedback on a word choice or an explanation, or ask it to poke holes in my argument, but I will not ask it to write for me or use its writing in my own drafts.”
+
+Ask the audience to hold their answer. The deck returns to it at the end.
+:::
+
+## The argument
+
+<div class="subtitle-line">The loudest warnings about AI writing keep coming from people who use it.</div>
+
+<div class="roadmap">
+<div><span>01</span><p>The pattern<small>Not an isolated case · The awkward question</small></p></div>
+<div><span>02</span><p>Why it keeps happening<small>Product or process? · “With,” not “by” · A rule for other people</small></p></div>
+<div><span>03</span><p>No clean line<small>We lack the words · Risk rises with use · Too powerful to give up</small></p></div>
+</div>
+
+## Not an isolated case
+
+<div class="subtitle-line">At AI’s birthplace, the provost is the latest rule-setter caught writing with AI.</div>
+
+<div class="pull-quote long">
+<blockquote>“The university where the term <em>artificial intelligence</em> was coined is ringing in the field’s 70th birthday in fitting fashion: with an academic-integrity scandal.”</blockquote>
+</div>
+
+<div class="pull-quote long">
+<blockquote>“People whose job involves writing about the appropriate uses of AI—or even setting the rules on AI use for others—<span class="hl">keep getting caught using AI to do it.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+“On September 21, the student newspaper The Dartmouth reported that Provost Santiago Schnell appeared to have relied heavily on AI to write all nine of the articles he’s published this year—including a Washington Post op-ed about students outsourcing their writing to AI.”
+
+“…he sent an email statement acknowledging that he uses AI chatbots as ‘assistive tools’ in his writing but downplayed their role in his process. Even Schnell’s statement, the paper found, registered as ‘100% AI-written’ on Pangram…”
+
+“Schnell is the latest example of an ironic phenomenon: People whose job involves writing about the appropriate uses of AI—or even setting the rules on AI use for others—keep getting caught using AI to do it.”
+
+Other examples in the article: an Australian professor’s op-ed on students doing their own writing; a nonprofit executive’s book on truth in the AI age with AI-fabricated quotes; an AI beat reporter who copied AI-invented quotes; a Stanford misinformation expert whose declaration contained ChatGPT-hallucinated citations.
+:::
+
+## The awkward question {.dark-slide background-color="#22252b"}
+
+<div class="subtitle-line">The question the article sets out to answer, and a first clue.</div>
+
+<div class="pull-quote">
+<blockquote>“Why do some of the people warning us most loudly about the technology’s pitfalls <span class="hl">keep tumbling headfirst into them?</span>”</blockquote>
+</div>
+
+<div class="pull-quote long">
+<blockquote>“As a technology, it is incredibly seductive”</blockquote>
+<div class="attribution">— Steven Rosenbaum, author of <em>The Future of Truth</em></div>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+“It’s one thing to embrace AI writing openly or shamelessly… It’s another to use AI to inveigh against improper uses of AI, and it raises an awkward question: Why do some of the people warning us most loudly about the technology’s pitfalls keep tumbling headfirst into them?”
+
+Rosenbaum’s book was “riddled with AI-generated misquotes.”
+
+“He’d gradually come to rely on it as a writing partner that made the work both easier and less lonely.”
+
+“The line between thinking and researching and reading and outlining and drafting and writing is really blurry.”
+:::
+
+## Product or process?
+
+<div class="subtitle-line">Does it matter who chose the words?</div>
+
+<div class="quote-pair">
+<div class="pull-quote">
+<span class="label">The result is what counts</span>
+<blockquote>“I don’t think readers care how the sausage is made. They care that it’s delicious.”</blockquote>
+<div class="attribution">— Steven Rosenbaum</div>
+</div>
+<div class="pull-quote">
+<span class="label">The author is what counts</span>
+<blockquote>“I think readers value knowing that every word they’re reading was chosen by the author and not an algorithm.”</blockquote>
+<div class="attribution">— Will Oremus</div>
+</div>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+Oremus’s red line: “I might ask a chatbot questions, get its feedback on a word choice or an explanation, or ask it to poke holes in my argument, but I will not ask it to write for me or use its writing in my own drafts.”
+:::
+
+## “With” AI, not “by” AI
+
+<div class="subtitle-line">The rule for students and the defense for oneself.</div>
+
+<div class="quote-pair">
+<div class="pull-quote">
+<span class="label">The op-ed</span>
+<blockquote>“Don’t outsource your thinking, however tempting that may be.”</blockquote>
+</div>
+<div class="pull-quote">
+<span class="label">The defense</span>
+<blockquote>“It was written with AI, and there’s a really big difference there”</blockquote>
+</div>
+</div>
+
+<div class="attribution-line">— Cath Ellis, pro-vice-chancellor for quality and integrity, Western Sydney University</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+Ellis’s op-ed, it soon became clear, “had been generated at least partly by AI.”
+
+“In defending her own AI use, she distinguished between the writing (which she outsourced) and the ideas (which she claimed were original).”
+
+Schnell, likewise, wrote that “students can now produce proficient prose without performing much of the intellectual work the prose appears to represent,” yet “claimed authorship of the ‘ideas and arguments’ even if bots did some of the writing.”
+:::
+
+## The same defense students use
+
+<div class="subtitle-line">The excuse sounds familiar from the other side of the desk.</div>
+
+<div class="pull-quote">
+<blockquote>“No doubt plenty of students accused of AI cheating have mounted defenses that <span class="hl">sounded a lot like Ellis’s and Schnell’s.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+## A rule for other people
+
+<div class="subtitle-line">“Writing is thinking” applies to everyone except me.</div>
+
+<div class="pull-quote">
+<blockquote>“What we see again and again in defenses of AI writing is that <span class="hl">the people using AI don’t seem to apply that maxim to themselves.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+“Writing is thinking has become a common refrain among critics of those who use AI tools to do their writing.”
+
+Oremus compares it to the “third-person effect”: “people’s tendency to believe that they’re immune to persuasive messaging even as they expect it to influence others.”
+
+The phrase “Writing is thinking is a rule for other people” came from Claude, when Oremus asked it to brainstorm hypotheses. He asks: “Am I an AI-writing hypocrite now too?”
+:::
+
+## We lack the words
+
+<div class="subtitle-line">There is no vocabulary for the middle ground.</div>
+
+<div class="pull-quote">
+<blockquote>“…society has yet to develop a vocabulary for all the ways of writing with AI that fall in between <span class="hl">‘AI-generated’ and ‘entirely human-written.’</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+::: {.notes}
+“Chatbots might come with fine-print disclaimers that they can make mistakes, but they bend over backwards in their interactions with users to come across as honest and trustworthy.”
+
+“Here’s where I acknowledge that even my own bright line on AI use might be fuzzier than I realize.”
+:::
+
+## Risk rises with use
+
+<div class="subtitle-line">Knowing the danger doesn’t protect the expert.</div>
+
+<div class="pull-quote long">
+<blockquote>“AI is a power tool, and like any power tool it’s dangerous if you’re careless with it. You can be the guy who warned everyone that a table saw can cut your fingers off and still lose a finger one day, because that risk is built into the machine. <span class="hl">It goes up the more you use it.</span>”</blockquote>
+<div class="attribution">— A journalist who once published AI-generated errors</div>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+## Too powerful to give up {.dark-slide background-color="#22252b"}
+
+<div class="subtitle-line">Oremus’s answer to the awkward question.</div>
+
+<div class="pull-quote">
+<blockquote>“…it makes sense that some of the people relying on AI would be the same ones sounding the alarm about its risks. <span class="hl">They know its flaws, but they also know its power.</span> And they just can’t bring themselves to give that up.”</blockquote>
+</div>
+
+::: {.source-note}
+Will Oremus, “Don’t Write With AI, Say People Who Write With AI,” *The Atlantic*, October 3, 2026.
+:::
+
+## For discussion
+
+<span class="label">Our question</span>
+
+<div class="discussion">If we hold students to “writing is thinking,” what rule do we hold ourselves to, and could we explain the difference to them?</div>

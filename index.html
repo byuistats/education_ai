@@ -1,0 +1,314 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI in Education Slides</title>
+<meta name="description" content="{{ site.description }}">
+<style>
+:root {
+  --blue: #006eb6;
+  --dark-blue: #214491;
+  --light-blue: #a0d4ed;
+  --bg: #f4f6f7;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #5d6675;
+  --line: #dde3e8;
+  --chip: #e8f1f8;
+  --shadow: 0 1px 2px rgba(20, 30, 50, .06), 0 6px 20px rgba(20, 30, 50, .06);
+  --type-discussion: #8a3b12;
+  --type-workshop: #1d6b45;
+  --type-explainer: #5a3d99;
+  --type-research: #214491;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #5bb3e6;
+    --dark-blue: #a0d4ed;
+    --bg: #12161d;
+    --card: #1b212b;
+    --ink: #e7ebf0;
+    --muted: #a3acb9;
+    --line: #2c3442;
+    --chip: #233142;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    --type-discussion: #f0a274;
+    --type-workshop: #7fd3a6;
+    --type-explainer: #c4b0f2;
+    --type-research: #a0c4f2;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+a { color: var(--blue); }
+.wrap { margin: 0 auto; max-width: 1180px; padding: 0 16px; }
+
+header.top {
+  background: var(--dark-blue);
+  color: #fff;
+  padding: 40px 0 28px;
+}
+@media (prefers-color-scheme: dark) { header.top { background: #1a2a4a; } }
+header.top .kicker { color: var(--light-blue); font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+header.top h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.02em; line-height: 1.1; margin: .2em 0 .3em; }
+header.top p { color: #d7e6f3; margin: 0; max-width: 46rem; }
+
+.toolbar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.toolbar .wrap { align-items: center; display: flex; flex-wrap: wrap; gap: 10px 14px; }
+.search { flex: 1 1 260px; position: relative; }
+.search input {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  font: inherit;
+  padding: 10px 40px 10px 38px;
+  width: 100%;
+}
+.search input:focus { border-color: var(--blue); outline: 2px solid color-mix(in srgb, var(--blue) 30%, transparent); }
+.search svg { color: var(--muted); left: 12px; position: absolute; top: 50%; transform: translateY(-50%); }
+.search kbd {
+  border: 1px solid var(--line); border-radius: 5px; color: var(--muted);
+  font-size: .75rem; padding: 1px 6px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+}
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px; color: var(--ink);
+  cursor: pointer; font: inherit; font-size: .88rem; font-weight: 600; padding: 6px 12px;
+}
+.chip[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+@media (prefers-color-scheme: dark) { .chip[aria-pressed="true"] { color: #0d1520; } }
+.chip .n { font-weight: 500; opacity: .7; }
+.sort { align-items: center; color: var(--muted); display: flex; font-size: .88rem; gap: 6px; }
+.sort select { background: var(--card); border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font: inherit; padding: 6px 8px; }
+
+.status { color: var(--muted); font-size: .9rem; margin: 18px 0 12px; }
+.status button { background: none; border: 0; color: var(--blue); cursor: pointer; font: inherit; font-weight: 600; padding: 0; }
+
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); padding-bottom: 48px; }
+@media (max-width: 400px) { .grid { grid-template-columns: 1fr; } }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; overflow: hidden; transition: transform .15s, box-shadow .15s;
+}
+.card:hover { box-shadow: 0 2px 4px rgba(20, 30, 50, .08), 0 12px 32px rgba(20, 30, 50, .12); transform: translateY(-2px); }
+.card .thumb { aspect-ratio: 16 / 9; background: var(--line); border-bottom: 1px solid var(--line); display: block; overflow: hidden; }
+.card .thumb img { display: block; height: 100%; object-fit: cover; width: 100%; }
+.card .body { display: flex; flex: 1; flex-direction: column; padding: 16px 18px 14px; }
+.meta { align-items: center; color: var(--muted); display: flex; flex-wrap: wrap; font-size: .8rem; gap: 4px 10px; }
+.type { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.type.Discussion { color: var(--type-discussion); }
+.type.Workshop { color: var(--type-workshop); }
+.type.Explainer { color: var(--type-explainer); }
+.type.Research { color: var(--type-research); }
+.card h2 { font-size: 1.18rem; letter-spacing: -.01em; line-height: 1.22; margin: 6px 0 2px; }
+.card h2 a { color: var(--ink); text-decoration: none; }
+.card h2 a:hover { color: var(--blue); }
+.source { color: var(--muted); font-size: .88rem; font-style: italic; margin: 0 0 8px; }
+.desc { font-size: .93rem; margin: 0 0 12px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; margin-top: auto; }
+.tag {
+  background: var(--chip); border: 0; border-radius: 6px; color: var(--ink); cursor: pointer;
+  font: inherit; font-size: .76rem; padding: 3px 8px;
+}
+.tag:hover { background: var(--light-blue); color: #0d1520; }
+.links { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 16px; padding-top: 12px; }
+.links a { font-size: .88rem; font-weight: 600; text-decoration: none; }
+.links a.primary { margin-right: auto; }
+.links a:hover { text-decoration: underline; }
+mark { background: color-mix(in srgb, var(--light-blue) 60%, transparent); border-radius: 2px; color: inherit; }
+.empty { color: var(--muted); padding: 40px 0 80px; text-align: center; }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 20px 0 40px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="kicker">BYU-Idaho · Statistics</div>
+    <h1>AI in Education Slide Decks</h1>
+    <p>{{ site.description }}. Search by title, author, or topic, or filter by deck type.</p>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search decks, authors, topics…" aria-label="Search slide decks" autocomplete="off">
+      <kbd>/</kbd>
+    </label>
+    <div class="chips" role="group" aria-label="Filter by type" id="types">
+      <button class="chip" data-type="" aria-pressed="true">All <span class="n">{{ site.data.decks | size }}</span></button>
+      {% assign groups = site.data.decks | group_by: "type" | sort: "name" %}
+      {% for g in groups %}<button class="chip" data-type="{{ g.name }}" aria-pressed="false">{{ g.name }} <span class="n">{{ g.size }}</span></button>
+      {% endfor %}
+    </div>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="new">Newest</option>
+        <option value="old">Oldest</option>
+        <option value="az">A–Z</option>
+      </select>
+    </label>
+  </div>
+</div>
+
+<main class="wrap">
+  <p class="status" id="status" aria-live="polite"></p>
+  <div class="grid" id="grid">
+    {% for d in site.data.decks %}
+    {% capture search %}{{ d.title }} {{ d.aka }} {{ d.source }} {{ d.description }} {{ d.type }} {{ d.topics | join: " " }}{% endcapture %}
+    <article class="card"
+      data-type="{{ d.type }}"
+      data-date="{{ d.date | date: '%Y-%m-%d' }}"
+      data-title="{{ d.title | escape }}"
+      data-order="{{ forloop.index }}"
+      data-text="{{ search | strip | downcase | escape }}">
+      <a class="thumb" href="{{ d.folder }}/{{ d.html }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ d.folder }}/lead-slide.png" alt="" loading="lazy" width="1600" height="900">
+      </a>
+      <div class="body">
+        <div class="meta">
+          <span class="type {{ d.type }}">{{ d.type }}</span>
+          <span>{{ d.date | date: "%b %-d, %Y" }}</span>
+          <span>{{ d.slides }} slides</span>
+        </div>
+        <h2><a href="{{ d.folder }}/{{ d.html }}" class="hilite">{{ d.title }}</a></h2>
+        <p class="source hilite">{{ d.source }}</p>
+        <p class="desc hilite">{{ d.description }}</p>
+        <div class="tags">{% for t in d.topics %}<button class="tag" type="button">{{ t }}</button>{% endfor %}</div>
+        <div class="links">
+          <a class="primary" href="{{ d.folder }}/{{ d.html }}">Open slides →</a>
+          {% if d.quotes %}<a href="https://github.com/byuistats/education_ai/blob/main/{{ d.folder }}/{{ d.quotes }}">Key quotes</a>{% endif %}
+          <a href="https://github.com/byuistats/education_ai/blob/main/{{ d.folder }}/{{ d.qmd }}">Quarto source</a>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="empty" id="empty" hidden>No decks match. <button class="chip" id="reset2" type="button">Clear search</button></p>
+</main>
+
+<footer>
+  <div class="wrap">
+    Source files and contribution notes are in the <a href="https://github.com/byuistats/education_ai">GitHub repository</a>.
+  </div>
+</footer>
+
+<script>
+(function () {
+  var q = document.getElementById('q');
+  var grid = document.getElementById('grid');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#types .chip'));
+  var sortSel = document.getElementById('sort');
+  var status = document.getElementById('status');
+  var empty = document.getElementById('empty');
+  var type = '';
+  var total = cards.length;
+
+  // Keep the original text of highlightable elements so marks can be reset.
+  var hl = [];
+  cards.forEach(function (c) {
+    c.querySelectorAll('.hilite').forEach(function (el) { hl.push({ el: el, text: el.textContent }); });
+  });
+
+  function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function escHtml(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function highlight(terms) {
+    var re = terms.length ? new RegExp('(' + terms.map(esc).join('|') + ')', 'gi') : null;
+    hl.forEach(function (h) {
+      var safe = escHtml(h.text);
+      h.el.innerHTML = re ? safe.replace(re, '<mark>$1</mark>') : safe;
+    });
+  }
+
+  function apply() {
+    var terms = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    var shown = 0;
+    cards.forEach(function (c) {
+      var okType = !type || c.dataset.type === type;
+      var text = c.dataset.text;
+      var okText = terms.every(function (t) { return text.indexOf(t) !== -1; });
+      c.hidden = !(okType && okText);
+      if (!c.hidden) shown++;
+    });
+    highlight(terms);
+    empty.hidden = shown !== 0;
+    var parts = [];
+    if (type) parts.push(escHtml(type));
+    if (terms.length) parts.push('matching “' + escHtml(q.value.trim()) + '”');
+    status.innerHTML = shown === total && !parts.length
+      ? total + ' slide decks'
+      : 'Showing ' + shown + ' of ' + total + ' decks · ' + parts.join(' · ') + ' · <button type="button" id="reset">Clear</button>';
+    var r = document.getElementById('reset');
+    if (r) r.onclick = reset;
+    var params = new URLSearchParams();
+    if (q.value.trim()) params.set('q', q.value.trim());
+    if (type) params.set('type', type);
+    if (sortSel.value !== 'new') params.set('sort', sortSel.value);
+    var s = params.toString();
+    try { history.replaceState(null, '', s ? '?' + s : location.pathname); } catch (e) {}
+  }
+
+  function sort() {
+    var mode = sortSel.value;
+    cards.sort(function (a, b) {
+      if (mode === 'az') return a.dataset.title.localeCompare(b.dataset.title);
+      var cmp = a.dataset.date.localeCompare(b.dataset.date);
+      if (cmp === 0) return a.dataset.order - b.dataset.order;
+      return mode === 'old' ? cmp : -cmp;
+    });
+    cards.forEach(function (c) { grid.appendChild(c); });
+  }
+
+  function setType(t) {
+    type = t;
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', String(c.dataset.type === t)); });
+  }
+
+  function reset() { q.value = ''; setType(''); apply(); q.focus(); }
+
+  chips.forEach(function (c) { c.addEventListener('click', function () { setType(c.dataset.type); apply(); }); });
+  q.addEventListener('input', apply);
+  sortSel.addEventListener('change', function () { sort(); apply(); });
+  document.getElementById('reset2').addEventListener('click', reset);
+  grid.addEventListener('click', function (e) {
+    if (e.target.classList.contains('tag')) { q.value = e.target.textContent; apply(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement !== q) { e.preventDefault(); q.focus(); }
+    if (e.key === 'Escape' && document.activeElement === q) { reset(); }
+  });
+
+  // Restore state from the URL so filtered views can be shared.
+  var p = new URLSearchParams(location.search);
+  if (p.get('q')) q.value = p.get('q');
+  if (p.get('type')) setType(p.get('type'));
+  if (p.get('sort')) sortSel.value = p.get('sort');
+  sort();
+  apply();
+})();
+</script>
+</body>
+</html>

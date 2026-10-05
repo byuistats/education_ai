@@ -1,0 +1,80 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Avenir Next", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+$presentation-heading-color: #22252b;
+$link-color: #9b2a31;
+$presentation-font-size-root: 36px;
+$body-bg: #faf7f1;
+$body-color: #26313b;
+
+/*-- scss:rules --*/
+:root {
+  --primary: #22252b;
+  --accent: #b8323a;
+  --accent-soft: rgba(184, 50, 58, 0.18);
+  --ink: #22252b;
+  --muted: #6b7480;
+  --rule: #ddd4c6;
+  --dark-bg: #22252b;
+  --quote-font: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+.reveal .slides section { font-size: 0.92em; text-align: left; }
+
+.reveal h2 {
+  border: 0; color: var(--ink); font-size: 1.4em; font-weight: 780;
+  letter-spacing: -0.025em; line-height: 1.04; margin: 0 0 0.2em; padding: 0;
+}
+.reveal h2::after {
+  background: var(--accent); content: ""; display: block;
+  height: 5px; margin-top: 0.26em; width: 78px;
+}
+
+.subtitle-line {
+  color: var(--muted); font-size: 0.8em; font-weight: 550;
+  line-height: 1.25; margin: 0.35em 0 0.9em; max-width: 92%;
+}
+
+.pull-quote { border-left: 6px solid var(--accent); margin: 0.5em 0 0; padding: 0.1em 0 0.1em 0.85em; max-width: 94%; }
+.pull-quote blockquote {
+  background: none; border: 0; box-shadow: none; color: var(--ink);
+  font-family: var(--quote-font); font-size: 1.5em; font-style: normal;
+  line-height: 1.32; margin: 0; padding: 0; width: 100%;
+}
+.pull-quote.long blockquote { font-size: 1.18em; }
+.pull-quote .attribution { color: var(--muted); font-size: 0.56em; font-weight: 700; letter-spacing: 0.08em; margin-top: 0.7em; text-transform: uppercase; }
+
+.hl { background: var(--accent-soft); border-radius: 0.1em; font-weight: 700; padding: 0 0.1em; }
+
+.quote-pair { display: grid; gap: 1.1em; grid-template-columns: 1fr 1fr; margin-top: 0.4em; }
+.quote-pair .pull-quote blockquote { font-size: 1.12em; }
+
+.label { color: var(--accent); display: block; font-size: 0.5em; font-weight: 800; letter-spacing: 0.11em; margin-bottom: 0.5em; text-transform: uppercase; }
+
+.roadmap { display: grid; gap: 0.7em; margin-top: 0.6em; }
+.roadmap > div { align-items: baseline; border-top: 2px solid var(--rule); display: grid; gap: 0.8em; grid-template-columns: 2.2em 1fr; padding-top: 0.5em; }
+.roadmap span { color: var(--accent); font-size: 0.9em; font-weight: 800; }
+.roadmap p { font-size: 0.9em; font-weight: 700; margin: 0; }
+.roadmap small { color: var(--muted); display: block; font-size: 0.72em; font-weight: 500; margin-top: 0.2em; }
+
+.source-note { bottom: 0.2em; color: var(--muted); font-size: 0.42em; left: 0; position: absolute; }
+
+.discussion { border: 2px solid var(--rule); border-radius: 0.3em; font-size: 1.05em; font-weight: 650; line-height: 1.3; margin-top: 0.8em; padding: 0.8em 1em; }
+
+/* Dark slides: thesis and conclusion */
+.reveal .dark-slide h2, .reveal .dark-slide .pull-quote blockquote { color: #ffffff; }
+.reveal .dark-slide .subtitle-line, .reveal .dark-slide .source-note, .reveal .dark-slide .attribution { color: #c9d1da; }
+.reveal .dark-slide .hl { background: rgba(255, 255, 255, 0.16); }
+
+.reveal .footer { color: #8d949c; font-size: 0.46em; }
+.reveal .slide-number { background: transparent; color: #8d949c; font-size: 0.48em; }
+
+/* Title slide */
+#title-slide { text-align: left; }
+#title-slide h1 { color: #ffffff; font-size: 2.3em; font-weight: 820; letter-spacing: -0.04em; line-height: 0.98; margin: 0 0 0.4em; max-width: 80%; }
+#title-slide .subtitle { color: #f4b3b3; font-family: var(--quote-font); font-size: 0.95em; font-style: italic; line-height: 1.25; margin: 0 0 1.8em; max-width: 72%; }
+#title-slide .quarto-title-author-name { color: #e6e9ed; font-size: 0.56em; font-weight: 750; letter-spacing: 0.1em; text-transform: uppercase; }
+#title-slide .quarto-title-affiliation, #title-slide .institute { color: #c9d1da; font-size: 0.5em; }
+#title-slide a { color: #f4b3b3; }
+#title-slide .quarto-title-authors { display: block; justify-content: flex-start; padding: 0; }
+#title-slide .quarto-title-author { padding: 0; }
+.attribution-line { color: var(--muted); font-size: 0.56em; font-weight: 700; letter-spacing: 0.08em; margin-top: 1em; text-transform: uppercase; }

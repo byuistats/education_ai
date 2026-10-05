@@ -1,127 +1,165 @@
 ---
 name: slide-architect
-description: Build professional Quarto/RevealJS presentations and slide decks from scratch. Use when creating, structuring, or improving presentations. Handles slide outlines, content writing, layout suggestions, speaker notes, visual recommendations, and deck optimization for clarity and executive readability.
+description: Build quote-driven Quarto/RevealJS discussion decks from articles, reports, and book chapters about AI in education. Use when creating, structuring, or improving a deck in this repo. Pulls direct quotes from the source, writes pithy titles and subtitles that summarize each quote, and sequences the quotes so the deck builds to the author's conclusion.
 ---
 
 # SlideArchitect
 
-Transform ideas into polished, presentation-ready slide decks. Acts as strategist, writer, and design advisor combined.
+Turn a source article into a short discussion deck that lets **the author speak**. The deck's job is to show the article's argument through the author's own words, in order, so that the audience reaches the author's conclusion by the last slide.
 
-## Core Workflow
+## Ground rules
 
-### Step 1: Gather Requirements
+1. **Quotes carry the content.** Every body slide is built around one direct quote (occasionally two that contrast). Quotes are verbatim. Trimming with an ellipsis (…) is fine; rewording is not. Do not "fix" the author's grammar or emphasis.
+2. **Our words are only titles and subtitles.** The title (≤ 7 words) and subtitle (one short line) summarize the *point* of the quote in a pithy way. No AI-written paragraphs, explanatory bullets, invented examples, or "AI application" commentary on the slide. If the slide needs more than a title, subtitle, and quote to make sense, choose a better quote.
+3. **One idea per slide.** One quote, one point.
+4. **The deck holds together.** Titles read in sequence should tell the article's argument on their own. Each slide should set up the next one.
+5. **Make the point clear early and land it at the end.** By slide 2 or 3 the audience should know the author's thesis (using the author's words). The final content slide is the author's conclusion.
+6. **Don't change finished decks.** A folder that already has a rendered deck (`*.qmd` + `*.html` + `lead-slide.png`) is done. Leave its files alone unless the user asks for edits to that deck by name.
+7. **Never commit source material.** PDFs and PNG screenshots of articles stay local (see `.gitignore`). Only `lead-slide.png` thumbnails are tracked.
 
-Before creating content, confirm:
+## Folder layout
 
-| Element | Questions |
-|---------|-----------|
-| **Folder** | Confirm the folder where the presentation will be created |
-| **Source** | Use the source material present in the folder |
-| **Topic** | What is the presentation about? Core message? |
-| **Purpose** | Inform, persuade, train, pitch, update, or decide? |
-| **Audience** | Teachers, Students, Industry? |
-| **Tone** | persuasive and educational |
-| **Length** | Number of slides |
+Each presentation lives in its own folder:
 
+```
+topic_folder/
+├── <source>.pdf | IMG_*.PNG   # article PDF and/or highlighted screenshots (ignored by git)
+├── quotes.md                  # key quotes, link to article at the top (tracked)
+├── <slug>-slides.qmd          # the deck source (tracked)
+├── <slug>-slides.html         # rendered, self-contained deck (tracked)
+├── custom.scss                # deck theme (tracked)
+├── lead-slide.png             # screenshot of the title slide; the index card thumbnail (tracked)
+└── .gitignore                 # /.quarto/ and **/*.quarto_ipynb
+```
 
-### Step 2: Create Structure
+**A new article** is a folder that has source material (PDF, screenshots, notes) but no `.qmd` deck yet. When asked to look for new work, list folders like that and start on them.
 
-Build a slide-by-slide outline before generating content:
+## Workflow
 
-1. **Opening** - Title slide + agenda/roadmap
-2. **Context** - Topic, background, argument, conclusion
-3. **Body** - 1-3 key sections with logical flow
-4. **structure** - make sure narrative flows from slide to slide and builds to conclusion. 
-5. **Speaker Style** - Fewer words on slides the better. big conclusions or direct quotes
-4. **Closing** - Summary or Call to action
+### Step 1: Gather requirements
 
-### Step 3: Write Slide Content
+Confirm, or assume these defaults when the user doesn't specify:
 
-For each slide, generate:
+| Element | Default |
+|---------|---------|
+| **Folder** | The folder holding the source material |
+| **Source** | The PDF, screenshots, or notes in that folder |
+| **Purpose** | Discussion starter: show what the author argues |
+| **Audience** | University faculty and administrators (BYU-Idaho) |
+| **Tone** | The author's own; no added persuasion |
+| **Length** | 8–14 slides including the title slide |
 
-- **Title** - Clear, active, benefit-oriented (5-7 words max)
-- **Subtitle** - Supporting context when needed
-- Keep direct quotes from source material don't modify much.
-- Build to a conclusion
+### Step 2: Read the source and build `quotes.md`
 
-**Content Rules:**
-- One idea per slide
-- Use parallel structure in bullet lists
-- Lead with outcomes, not activities
-- Replace dense paragraphs with visual hierarchy
-- Active voice, present tense
+1. Read the full article. Some PDFs are image-only (`pdftotext` returns nothing); if so, render the pages (`pdftoppm -r 110 -png file.pdf out/p`) and read the images.
+2. **Highlighted screenshots come first.** If the folder has screenshots with highlighted passages (e.g., `IMG_*.PNG` from a phone), those passages are the user's chosen key quotes. Every highlighted passage must appear in `quotes.md` and in the deck.
+3. If there are no highlights, or not enough to carry the argument, choose quotes from the article that (a) state the thesis, (b) give the main evidence or examples, (c) mark turns in the argument, and (d) state the conclusion.
+4. Write `quotes.md` in the folder using this template:
 
-### Step 4: Recommend Layout & Visuals
+```markdown
+# <Article title>
 
-Assign each slide a layout type and visual direction.
+**<Author>**, *<Publication>*, <date>
+[Read the article](<URL>)
 
-### Step 5: Optimize & Review
+## The point
 
-Final quality checks:
+> <The one quote that best states the article's thesis or conclusion>
 
-- [ ] Every slide supports the core message
-- [ ] Transitions between slides are logical
+## Key quotes
 
+### 1. <Pithy title that summarizes the quote>
+> "<verbatim quote>"
 
-## Deck Type Specialization
+*Context:* <one line: where it appears / who is speaking, if not the author>
+*Highlighted:* yes (IMG_1818.PNG)    ← only when it came from a screenshot
+```
 
+- The article link goes at the top. If the exact URL can't be confirmed (paywalled or blocked sites), use the publisher's search URL and mark it `<!-- TODO: replace with article URL -->`. Never invent a URL slug.
+- List the quotes **in the order they appear in the article**. The deck may reorder them, but usually follows the article's order.
+- Aim for 8–15 quotes. Include more than the deck uses so the user can swap them.
 
-## Content Transformation Modes
+### Step 3: Outline the arc
 
-### Updated Audio or Text from presentation
+Before writing the `.qmd`, write the sequence of slide titles only and check that the titles alone tell the story:
 
-1. review audio compared to slides
-2. Suggest slide updates based on audio/text from speaker
+1. **Title slide.** Article title, with the article's subtitle/dek as the deck subtitle. Author and publication in `author`; article link in `institute`.
+2. **The argument.** A three-part roadmap whose labels are the deck's sections, or the thesis quote itself.
+3. **Setup.** The problem or situation, in the author's words.
+4. **Body.** Evidence and turns in the argument, one quote per slide, each building on the last.
+5. **Conclusion.** The author's closing claim as a quote, on a dark slide.
+6. *(Optional)* **For discussion.** One question, clearly labeled as ours, that points back to the conclusion. No new claims.
 
-### From Rough Ideas
-1. Capture all concepts (brainstorm mode)
-2. Group into themes
-3. Sequence for narrative flow
-4. Build outline → Generate slides
+### Step 4: Write the slides
 
-### From Meeting Notes
-1. Extract decisions, actions, and key points
-2. Structure into problem/solution/outcome
-3. Create supporting visuals
-4. Add context slides for absent attendees
+For each body slide:
 
-### From Documents
-1. Identify key arguments and evidence
-2. Strip detail to core insights
-3. Convert paragraphs to visual hierarchies
-4. Preserve data, simplify explanations
+```markdown
+## <Pithy title, ≤ 7 words>
 
-### From Case Studies
-1. Situation → Challenge → Solution → Results
-2. Pull quotable metrics
-3. Build before/after contrast
-4. Add customer quote slide
+<div class="subtitle-line"><one-line subtitle stating the point of the quote></div>
 
-## Advanced Capabilities
+<div class="pull-quote">
+<blockquote>"<verbatim quote>"</blockquote>
+<div class="attribution">— <speaker, if not the author></div>
+</div>
 
-### Improve Existing Slides
-1. Review current content
-2. Identify overload or confusion
-3. Restructure for clarity
-4. Rewrite for impact
-5. Suggest visual upgrades
+::: {.source-note}
+<Author>, "<Title>," *<Publication>*, <date>.
+:::
 
+::: {.notes}
+<The surrounding passage from the article, verbatim, so the presenter has the context.>
+:::
+```
 
-## Theme Direction
+**Titles and subtitles**
+- The title is the claim, not the topic: "The credential no longer convinces," not "Credentials."
+- Prefer the author's own memorable phrases for titles ("Going through the motions," "Who will step up?").
+- The subtitle states in plain words what the quote shows. It must not add facts or opinions the article doesn't contain.
+- Active voice, present tense, parallel structure across slides.
 
-Suggest consistent visual direction:
+**Quotes**
+- Verbatim, with curly quotes. Use an ellipsis for cuts, and square brackets only for unavoidable clarifications.
+- Keep quotes to about 50 words or fewer on screen. Put the longer passage in the speaker notes.
+- Highlight the key phrase in a long quote with `<span class="hl">…</span>`. Use at most one highlight per slide.
+- Two quotes on one slide only when they contrast (e.g., product vs. process), using `.quote-pair`.
 
-- **Typography** - Clean sans-serif (Arial, Calibri, Helvetica), 24pt+ for body
-- **Colors** - 3-4 color palette (primary, secondary, accent, neutral)
-- **Spacing** - Generous white space, consistent margins
-- **Imagery** - Professional photography or clean illustrations
-- **Icons** - Consistent icon style (line, filled, or outlined)
+### Step 5: Render, screenshot, and register
 
-## Best Practices Reminders
+1. Render: `quarto render <folder>/<slug>-slides.qmd` (decks use `embed-resources: true`).
+2. Screenshot the title slide to `lead-slide.png` (1600×900) with headless Chrome:
+   `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --hide-scrollbars --window-size=1600,900 --screenshot=<folder>/lead-slide.png "file://$PWD/<folder>/<slug>-slides.html"`
+3. Register the deck: add an entry to `_data/decks.yml` (title from the deck, folder, html, qmd, `quotes: quotes.md`, date, type, source, slide count, topics, one-sentence description). The GitHub Pages index (`index.html`) is built from that file; don't edit the card markup. Also add a line to the slide deck sources list in `README.md`.
+4. Add the folder's `.gitignore` (`/.quarto/` and `**/*.quarto_ipynb`).
 
-- 10-20-30 rule: 10 slides, 20 minutes, 30pt font minimum
-- 6x6 rule: Max 6 bullet points, 6 words each
-- F-pattern layout: Important content top-left
-- Contrast: Dark text on light background (or inverse)
-- Alignment: Consistent left-align or center-align per deck
-- Transitions: Simple fades or none; avoid animations that distract
+### Step 6: Review
+
+- [ ] Every highlighted passage from the screenshots appears in `quotes.md` and in the deck
+- [ ] Every quote matches the source word for word (spot-check against the PDF)
+- [ ] No slide contains our prose beyond the title, subtitle, and labels
+- [ ] Reading only the titles tells the article's argument from start to finish
+- [ ] The thesis is clear by slide 3; the last content slide is the author's conclusion
+- [ ] Source note on every slide; article link on the title slide and in `quotes.md`
+- [ ] No text overflows the slide at 1600×900 (check the rendered HTML)
+- [ ] No PDFs or source screenshots are staged (`git status`)
+
+## Other modes
+
+### Update from audio or a speaker's text
+1. Compare the audio or transcript with the slides.
+2. Suggest slide updates based on what the speaker emphasized, keeping quotes verbatim.
+
+### Improve an existing deck (only when asked by name)
+1. Replace paraphrase with the source quote it summarizes.
+2. Rewrite titles as pithy claims; cut explanatory bullets.
+3. Reorder so the titles tell the argument.
+
+## Theme direction
+
+- **Typography.** Clean sans-serif for titles and labels; a serif for quotes so the author's voice stands apart from ours.
+- **Colors.** 3–4 colors (primary, secondary, accent, neutral), defined as CSS variables in `custom.scss`.
+- **Layout.** Quote large and left-aligned; title top-left; source note small at the bottom.
+- **Contrast.** Dark text on a light background; dark background only for the thesis and conclusion slides.
+- **Transitions.** Fade or none.
+- **Size.** Quote text ≥ 28pt equivalent. If a quote doesn't fit, cut it with an ellipsis rather than shrinking the font.

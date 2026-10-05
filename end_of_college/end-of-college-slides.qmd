@@ -1,0 +1,187 @@
+---
+title: "The End of College as We Know It"
+subtitle: "“AI is wreaking havoc in universities, but higher ed’s woes long predate ChatGPT.”"
+author: "Andy Kessler · The Wall Street Journal · October 4, 2026"
+institute: "[Read the article](https://www.wsj.com/search?query=%22The%20End%20of%20College%20as%20We%20Know%20It%22%20Kessler)"
+title-slide-attributes:
+  data-background-color: "#1f2a36"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: "c/t"
+    embed-resources: true
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Kessler · The End of College as We Know It"
+---
+
+## The argument
+
+<div class="subtitle-line">AI didn’t create the crisis in higher education. It exposed it.</div>
+
+<div class="roadmap">
+<div><span>01</span><p>The problems run deeper<small>AI isn’t the first cause · The credential game is over · Employers doubt the graduates</small></p></div>
+<div><span>02</span><p>AI exposes the system<small>Going through the motions · Outdated tests · Obsolete teachers?</small></p></div>
+<div><span>03</span><p>Change or decay<small>Learning is experiential · Virtual apprenticeships · Who will step up?</small></p></div>
+</div>
+
+## Don’t blame AI first {.dark-slide background-color="#1f2a36"}
+
+<div class="subtitle-line">Kessler’s thesis: the cracks were there before AI arrived.</div>
+
+<div class="pull-quote long">
+<blockquote>“What’s the matter with universities? Syracuse missed its 2026 enrollment target and may run a $30 million deficit. … Colleges enroll 4.2% fewer undergraduates than last year.”</blockquote>
+</div>
+
+<div class="pull-quote">
+<blockquote>“It’s easy to blame artificial intelligence, but <span class="hl">problems run deeper</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+“What’s the matter with universities? Syracuse missed its 2026 enrollment target and may run a $30 million deficit. Minnesota is cutting its budget by $225 million over two years. Tulsa is slashing tuition by more than half. Colleges enroll 4.2% fewer undergraduates than last year. Cornell, Yale, Vanderbilt and Washington University in St. Louis put out plans—not radical enough, if you ask me—to reimagine the university. Wossamotta U?”
+
+“Colleges are known for left-leaning professors, speech suppression, bizarre courses—Occidental College taught ‘The Unbearable Whiteness of Barbie’—and easy grading more than critical thinking, judgment and problem solving. It’s easy to blame artificial intelligence, but problems run deeper:”
+
+He then lists aptitude, admissions, accounting, affordability, and artificial intelligence.
+:::
+
+## The credential game is over
+
+<div class="subtitle-line">Colleges became employers’ sorting system, and employers are losing faith in it.</div>
+
+<div class="pull-quote">
+<blockquote>“…companies rely on colleges to do their sorting via aptitude tests like the SAT. That led to branding and credentialism, but <span class="hl">that game is over.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+“Aptitude. In Griggs v. Duke Power (1971), the Supreme Court effectively banned corporations from giving intelligence tests, so companies rely on colleges to do their sorting via aptitude tests like the SAT. That led to branding and credentialism, but that game is over.”
+:::
+
+## Employers doubt the graduates
+
+<div class="subtitle-line">Graduates lack the skills a degree is supposed to signal.</div>
+
+<div class="pull-quote">
+<blockquote>“A Cornell report noted employers’ ‘jarring’ skepticism of college graduates because they lack job skills such as <span class="hl">‘the ability to handle uncertainty and solve problems that do not have clear answers.’</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+Highlighted passage.
+
+“A Forbes survey found almost half of corporate executives are either less likely to hire Ivy League graduates than they were five years ago or would never hire them.”
+:::
+
+## Going through the motions
+
+<div class="subtitle-line">When AI writes and AI grades, the structure itself is the problem.</div>
+
+<div class="pull-quote">
+<blockquote>“Professors and students seem to be <span class="hl">going through the motions of learning</span>, so there’s a huge structural problem. Do ChatGPT-written essays get graded by Claude? Why bother?”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+## The tests failed, not the humans
+
+<div class="subtitle-line">AI’s exam scores reveal what our assessments actually measure.</div>
+
+<div class="pull-quote">
+<blockquote>“…AI has passed bar exams and medical licensing exams, which <span class="hl">says more about these outdated tests than the inadequacy of humans</span>, perhaps a sign of an antiquated education system.”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+“Three years ago, OpenAI’s GPT-4 scored 1,410 on the SAT, maybe enough to get into Michigan. Since then, AI has passed bar exams and medical licensing exams, which says more about these outdated tests than the inadequacy of humans, perhaps a sign of an antiquated education system.”
+:::
+
+## Are teachers obsolete?
+
+<div class="subtitle-line">If AI tutoring beats active learning, the classroom has to justify itself.</div>
+
+<div class="pull-quote">
+<blockquote>“Even worse is a 2025 Harvard study, ‘AI tutoring outperforms in-class active learning.’ <span class="hl">Are teachers and professors becoming obsolete?</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+Highlighted passage.
+:::
+
+## Use AI, end the lecture
+
+<div class="subtitle-line">The answer is to change how learning happens, not to ban the tool.</div>
+
+<div class="pull-quote">
+<blockquote>“Universities can take advantage of AI rather than ban it. The sage-on-a-stage format is over. <span class="hl">Learning is experiential.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+Highlighted passage (first half). Continues on the next slide.
+:::
+
+## Learn by doing real work
+
+<div class="subtitle-line">Bring the job into the degree.</div>
+
+<div class="pull-quote">
+<blockquote>“As corporate America rejects college branding, graduates would benefit from more hands-on experience. Universities may be uniquely positioned to implement what I call <span class="hl">‘virtual apprenticeships,’ real job experience while still at school.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+Highlighted passage (second half).
+
+“I suggest all students spend their entire junior year on team projects. Assignments might include building nuclear autonomous buses or robots that cook. Cross-discipline self-organizing teams will form.”
+
+“Self-paced AI-tutored instruction can help students learn what they need as problems arise.”
+:::
+
+## Change or decay {.dark-slide background-color="#1f2a36"}
+
+<div class="subtitle-line">Kessler’s conclusion.</div>
+
+<div class="pull-quote">
+<blockquote>“If universities don’t change, more than a few will implode, while others will wither away over decades. AI and alternative forms of learning are already rising. <span class="hl">Something radical is needed to stop the decay of our once great universities.</span> Who will step up?”</blockquote>
+</div>
+
+::: {.source-note}
+Andy Kessler, “The End of College as We Know It,” *The Wall Street Journal*, October 4, 2026.
+:::
+
+::: {.notes}
+Highlighted passage.
+:::
+
+## For discussion
+
+<span class="label">Our question</span>
+
+<div class="discussion">Where are our students “going through the motions of learning,” and what would it take to make that learning experiential?</div>

@@ -11,5 +11,7 @@ Short presentations and discussion materials about artificial intelligence in ed
 - [y code when ai?](hadley_on_ai/hadley-on-ai-summary.qmd) - Summarizes Hadley Wickham’s perspective on AI as an amplifier, coding-agent feedback loops, and the continuing role of human judgment in data science.
 - [The Future of the American University](cornell_report/cornell-report-summary.qmd) - Summarizes Cornell’s case for judgment, integrated learning, public trust, and institutional reform in an age of AI disruption.
 - [Hopeless but Hoping in the AI Age](hope_education_ai/faith-and-hope-slides.qmd) - Uses Joseph M. Spencer's *For Zion* to distinguish hope from desperation, examine what AI exposes in education, and consider more hopeful forms of teaching and learning.
+- [The End of College as We Know It](end_of_college/end-of-college-slides.qmd) - Uses Andy Kessler's own words to trace his argument that AI exposes deeper problems in higher education and that universities must change radically or decay.
+- [Don't Write With AI, Say People Who Write With AI](write_with_ai/write-with-ai-slides.qmd) - Uses Will Oremus's reporting to ask why the loudest critics of AI writing keep getting caught using it.
 
-The rendered presentations are linked from the [project presentation GitHub Pages](https://byuistats.github.io/education_ai/).
+The rendered presentations are linked from the [project presentation GitHub Pages](https://byuistats.github.io/education_ai/). That index page is generated from [`_data/decks.yml`](_data/decks.yml); add one entry there to list a new deck.
