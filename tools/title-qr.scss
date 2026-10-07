@@ -1,0 +1,7 @@
+/* QR code on a deck's title slide (scan to open the deck). Sizes are in px so every deck matches.
+   Light-background decks can set --qr-text and --qr-link on #title-slide. */
+#title-slide .title-qr { align-items: center; display: flex; gap: 24px; margin-top: 8px; text-align: left; }
+#title-slide .title-qr img { background: #fff; border: 0; border-radius: 8px; box-shadow: none; height: 112px; margin: 0; padding: 9px; width: 112px; }
+#title-slide .title-qr-text { color: var(--qr-text, #d6e2ea); display: block; font-size: 17px; font-weight: 600; letter-spacing: 0; line-height: 1.35; text-transform: none; }
+#title-slide .title-qr-text b { display: block; font-weight: 700; letter-spacing: 0.04em; }
+#title-slide .title-qr-text a { border: 0 !important; color: var(--qr-link, #e8b64a) !important; font-size: 20px !important; font-weight: 700 !important; letter-spacing: 0 !important; padding: 0 !important; text-decoration: none !important; }

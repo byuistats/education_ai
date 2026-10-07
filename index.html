@@ -104,6 +104,11 @@ header.top p { color: #d7e6f3; margin: 0; max-width: 46rem; }
 
 .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); padding-bottom: 48px; }
 @media (max-width: 400px) { .grid { grid-template-columns: 1fr; } }
+.group { margin-bottom: 36px; }
+.group-title { font-size: 1.5rem; letter-spacing: -.01em; margin: 8px 0 2px; }
+.group-title .n { color: var(--muted); font-size: .9rem; font-weight: 500; }
+.group-note { color: var(--muted); margin: 0 0 16px; }
+.group .grid { padding-bottom: 0; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow);
   display: flex; flex-direction: column; overflow: hidden; transition: transform .15s, box-shadow .15s;
@@ -174,14 +179,21 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
 
 <main class="wrap">
   <p class="status" id="status" aria-live="polite"></p>
-  <div class="grid" id="grid">
-    {% for d in site.data.decks %}
+  {% assign sections = "Articles|Setup & training" | split: "|" %}
+  {% for sname in sections %}
+  {% assign items = site.data.decks | where: "group", sname %}
+  <section class="group" data-group="{{ sname | escape }}">
+    <h2 class="group-title">{{ sname | escape }} <span class="n">{{ items | size }}</span></h2>
+    <p class="group-note">{% if sname == "Articles" %}Discussion decks built from articles, reports, and research.{% else %}Setup guides and training for getting started with AI tools.{% endif %}</p>
+    <div class="grid">
+    {% for d in items %}
     {% capture search %}{{ d.title }} {{ d.aka }} {{ d.source }} {{ d.description }} {{ d.type }} {{ d.topics | join: " " }}{% endcapture %}
     <article class="card"
       data-type="{{ d.type }}"
       data-date="{{ d.date | date: '%Y-%m-%d' }}"
       data-title="{{ d.title | escape }}"
       data-order="{{ forloop.index }}"
+      data-group="{{ sname | escape }}"
       data-text="{{ search | strip | downcase | escape }}">
       <a class="thumb" href="{{ d.folder }}/{{ d.html }}" tabindex="-1" aria-hidden="true">
         <img src="{{ d.folder }}/lead-slide.png" alt="" loading="lazy" width="1600" height="900">
@@ -204,7 +216,9 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
       </div>
     </article>
     {% endfor %}
-  </div>
+    </div>
+  </section>
+  {% endfor %}
   <p class="empty" id="empty" hidden>No decks match. <button class="chip" id="reset2" type="button">Clear search</button></p>
 </main>
 
@@ -217,8 +231,9 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
 <script>
 (function () {
   var q = document.getElementById('q');
-  var grid = document.getElementById('grid');
-  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+  var main = document.querySelector('main');
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
   var chips = Array.prototype.slice.call(document.querySelectorAll('#types .chip'));
   var sortSel = document.getElementById('sort');
   var status = document.getElementById('status');
@@ -253,6 +268,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
       c.hidden = !(okType && okText);
       if (!c.hidden) shown++;
     });
+    groups.forEach(function (g) { g.hidden = !g.querySelector('.card:not([hidden])'); });
     highlight(terms);
     empty.hidden = shown !== 0;
     var parts = [];
@@ -279,7 +295,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
       if (cmp === 0) return a.dataset.order - b.dataset.order;
       return mode === 'old' ? cmp : -cmp;
     });
-    cards.forEach(function (c) { grid.appendChild(c); });
+    cards.forEach(function (c) { c.parentNode.appendChild(c); });
   }
 
   function setType(t) {
@@ -293,7 +309,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .85r
   q.addEventListener('input', apply);
   sortSel.addEventListener('change', function () { sort(); apply(); });
   document.getElementById('reset2').addEventListener('click', reset);
-  grid.addEventListener('click', function (e) {
+  main.addEventListener('click', function (e) {
     if (e.target.classList.contains('tag')) { q.value = e.target.textContent; apply(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   });
   document.addEventListener('keydown', function (e) {

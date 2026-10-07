@@ -2,6 +2,7 @@
 title: "Hopeless but Hoping in the AI Age"
 subtitle: "Joseph Spencer’s *For Zion* and the future of learning"
 author: "Discussion Deck"
+institute: '<span class="title-qr"><img src="assets/qr/hope-ai.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/hope-ai">shortie.fyi/hope-ai</a></span></span>'
 title-slide-attributes:
   data-background-color: "#244138"
 format:

@@ -2,7 +2,9 @@
 title: "y code when ai?"
 subtitle: "Hadley Wickham on coding with AI"
 author: "Discussion Deck"
-institute: "[Read the full article](https://tidydesign.substack.com/p/y-code-when-ai)"
+institute:
+  - "[Read the full article](https://tidydesign.substack.com/p/y-code-when-ai)"
+  - '<span class="title-qr"><img src="assets/qr/hadley-ai.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/hadley-ai">shortie.fyi/hadley-ai</a></span></span>'
 title-slide-attributes:
   data-background-color: "#183a57"
 format:

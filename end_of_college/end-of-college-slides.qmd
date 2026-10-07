@@ -2,7 +2,9 @@
 title: "The End of College as We Know It"
 subtitle: "“AI is wreaking havoc in universities, but higher ed’s woes long predate ChatGPT.”"
 author: "Andy Kessler · The Wall Street Journal · October 4, 2026"
-institute: "[Read the article](https://www.wsj.com/search?query=%22The%20End%20of%20College%20as%20We%20Know%20It%22%20Kessler)"
+institute:
+  - "[Read the article](https://www.wsj.com/search?query=%22The%20End%20of%20College%20as%20We%20Know%20It%22%20Kessler)"
+  - '<span class="title-qr"><img src="assets/qr/end-of-college.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/end-of-college">shortie.fyi/end-of-college</a></span></span>'
 title-slide-attributes:
   data-background-color: "#1f2a36"
 format:

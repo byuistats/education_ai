@@ -2,7 +2,9 @@
 title: "The Future of the American University"
 subtitle: "Cornell's case for judgment in an age of disruption"
 author: "Discussion Deck"
-institute: "[Read the full report](https://provost.cornell.edu/_files/initiatives/future-of-the-american-university-full-report.pdf)"
+institute:
+  - "[Read the full report](https://provost.cornell.edu/_files/initiatives/future-of-the-american-university-full-report.pdf)"
+  - '<span class="title-qr"><img src="assets/qr/cornell-report.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/cornell-report">shortie.fyi/cornell-report</a></span></span>'
 title-slide-attributes:
   data-background-color: "#6f1d25"
 format:

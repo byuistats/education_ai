@@ -1,0 +1,79 @@
+{
+  "shortie.fyi|ai-codex|https://byuistats.github.io/education_ai/ai_codex/ai-codex-setup-slides.html": {
+    "idString": "link_8pqL_034bwvvnHfWKTihQ6T2jPD",
+    "originalURL": "https://byuistats.github.io/education_ai/ai_codex/ai-codex-setup-slides.html",
+    "path": "ai-codex",
+    "shortURL": "https://shortie.fyi/ai-codex",
+    "title": "Codex at BYU-I"
+  },
+  "shortie.fyi|ai-commands|https://byuistats.github.io/education_ai/ai_vscode_start/ai-vscode-start-slides.html#/all-commands": {
+    "idString": "link_8pqL_034bwwEZmPJ14lLSDJSH0Y",
+    "originalURL": "https://byuistats.github.io/education_ai/ai_vscode_start/ai-vscode-start-slides.html#/all-commands",
+    "path": "ai-commands",
+    "shortURL": "https://shortie.fyi/ai-commands",
+    "title": "AI with VS Code: every command (slide 13)"
+  },
+  "shortie.fyi|ai-stats|https://byuistats.github.io/education_ai/ai_stats_leaders/ai-stats-leaders-slides.html": {
+    "idString": "link_8pqL_034bwvwxK2TOvK2g38vY6u",
+    "originalURL": "https://byuistats.github.io/education_ai/ai_stats_leaders/ai-stats-leaders-slides.html",
+    "path": "ai-stats",
+    "shortURL": "https://shortie.fyi/ai-stats",
+    "title": "Generative AI Hasn't Changed Learning"
+  },
+  "shortie.fyi|ai-vscode|https://byuistats.github.io/education_ai/ai_vscode_start/ai-vscode-start-slides.html": {
+    "idString": "link_8pqL_034bwqZ2UhAGeYDAOjWaTW",
+    "originalURL": "https://byuistats.github.io/education_ai/ai_vscode_start/ai-vscode-start-slides.html",
+    "path": "ai-vscode",
+    "shortURL": "https://shortie.fyi/ai-vscode",
+    "title": "AI with VS Code: first-day deck"
+  },
+  "shortie.fyi|ai-workshop|https://byuistats.github.io/education_ai/ai_introduction/ai-workshop-slides.html": {
+    "idString": "link_8pqL_034bwvuPay05l1ZbYx25Lh",
+    "originalURL": "https://byuistats.github.io/education_ai/ai_introduction/ai-workshop-slides.html",
+    "path": "ai-workshop",
+    "shortURL": "https://shortie.fyi/ai-workshop",
+    "title": "Wrestling with the Machine"
+  },
+  "shortie.fyi|cornell-report|https://byuistats.github.io/education_ai/cornell_report/cornell-report-summary.html": {
+    "idString": "link_8pqL_034bwvs7fWb8tR4E0JdnUJ",
+    "originalURL": "https://byuistats.github.io/education_ai/cornell_report/cornell-report-summary.html",
+    "path": "cornell-report",
+    "shortURL": "https://shortie.fyi/cornell-report",
+    "title": "The Future of the American University"
+  },
+  "shortie.fyi|end-of-college|https://byuistats.github.io/education_ai/end_of_college/end-of-college-slides.html": {
+    "idString": "link_8pqL_034bwvpjn2tvxzmoGhu0Lu",
+    "originalURL": "https://byuistats.github.io/education_ai/end_of_college/end-of-college-slides.html",
+    "path": "end-of-college",
+    "shortURL": "https://shortie.fyi/end-of-college",
+    "title": "The End of College as We Know It"
+  },
+  "shortie.fyi|hadley-ai|https://byuistats.github.io/education_ai/hadley_on_ai/hadley-on-ai-summary.html": {
+    "idString": "link_8pqL_034bwvtHnnqKiGS9ZzjmOr",
+    "originalURL": "https://byuistats.github.io/education_ai/hadley_on_ai/hadley-on-ai-summary.html",
+    "path": "hadley-ai",
+    "shortURL": "https://shortie.fyi/hadley-ai",
+    "title": "y code when ai?"
+  },
+  "shortie.fyi|hope-ai|https://byuistats.github.io/education_ai/hope_education_ai/faith-and-hope-slides.html": {
+    "idString": "link_8pqL_034bwvquhpqhJKYAT6vuPH",
+    "originalURL": "https://byuistats.github.io/education_ai/hope_education_ai/faith-and-hope-slides.html",
+    "path": "hope-ai",
+    "shortURL": "https://shortie.fyi/hope-ai",
+    "title": "Hopeless but Hoping in the AI Age"
+  },
+  "shortie.fyi|why-ai-works|https://byuistats.github.io/education_ai/why_ai_works/why-ai-works-slides.html": {
+    "idString": "link_8pqL_034bwvyMfFNlzvpwsK0s4H",
+    "originalURL": "https://byuistats.github.io/education_ai/why_ai_works/why-ai-works-slides.html",
+    "path": "why-ai-works",
+    "shortURL": "https://shortie.fyi/why-ai-works",
+    "title": "Why AI Works"
+  },
+  "shortie.fyi|write-with-ai|https://byuistats.github.io/education_ai/write_with_ai/write-with-ai-slides.html": {
+    "idString": "link_8pqL_034bwvoIatW4EATwYk6mXd",
+    "originalURL": "https://byuistats.github.io/education_ai/write_with_ai/write-with-ai-slides.html",
+    "path": "write-with-ai",
+    "shortURL": "https://shortie.fyi/write-with-ai",
+    "title": "Don't Write With AI, Say People Who Write With AI"
+  }
+}

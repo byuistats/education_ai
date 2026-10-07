@@ -1,6 +1,10 @@
 ---
 title: "Wrestling with the Machine"
 subtitle: "AI in Education · Math Department Meeting"
+author: "Faculty Workshop"
+institute: '<span class="title-qr"><img src="assets/qr/ai-workshop.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/ai-workshop">shortie.fyi/ai-workshop</a></span></span>'
+title-slide-attributes:
+  data-background-color: "#1a3a5c"
 format:
   revealjs:
     theme: [default, custom.scss]

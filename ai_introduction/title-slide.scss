@@ -1,0 +1,21 @@
+/* Title slide: navy cover shared with ai_stats_leaders and why_ai_works */
+#title-slide { text-align: left; }
+#title-slide h1 {
+  border: 0; color: #ffffff; font-size: 2.2em; font-weight: 800; letter-spacing: -0.04em;
+  line-height: 0.98; margin: 0 0 0.38em; max-width: 78%; padding: 0;
+}
+#title-slide .subtitle {
+  color: #c9b98a; font-size: 0.85em; font-weight: 600; line-height: 1.22;
+  margin: 0 0 2em; max-width: 64%;
+}
+#title-slide .quarto-title-author-name {
+  color: #d6e2ea; font-size: 0.53em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+#title-slide .quarto-title-authors { display: block; justify-content: flex-start; padding: 0; }
+#title-slide .quarto-title-author { padding: 0; }
+#title-slide::after {
+  color: rgba(255, 255, 255, 0.07); content: var(--mark, "AI"); font-size: 8.8em; font-weight: 900;
+  line-height: 0.8; position: absolute; right: -0.03em; top: 0.12em;
+}
+
+@import "../tools/title-qr";

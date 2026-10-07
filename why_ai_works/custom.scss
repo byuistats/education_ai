@@ -2,6 +2,9 @@
 @import "../ai_introduction/custom.scss";
 
 /*-- scss:rules --*/
+@import "../ai_introduction/title-slide";
+#title-slide { --mark: "LLM"; }
+
 .reveal .slides section {
   font-size: 0.9em;
 }

@@ -2,21 +2,13 @@
 @import "../ai_introduction/custom.scss";
 
 /*-- scss:rules --*/
+@import "../ai_introduction/title-slide";
 
 .reveal .slides section {
   font-size: 0.9em;
 }
 
-.reveal .slides section.title-slide h1 {
-  max-width: 80%;
-  font-size: 1.55em;
-  line-height: 1.08;
-}
-
-.reveal .slides section.title-slide .subtitle {
-  color: #2a6f97;
-  font-size: 0.8em;
-}
+#title-slide { --mark: "Σ"; }
 
 .reveal .slides section.dark-slide h2,
 .reveal .slides section.dark-slide p,
