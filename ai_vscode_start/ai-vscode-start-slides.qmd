@@ -221,6 +221,8 @@ Define CLI once, here. Everything in the table except the GitHub website is a CL
 
 <span class="kicker">Give it a toolbox</span>
 
+<div class="lede"><b>Restart VS Code before you run these commands.</b></div>
+
 :::: {.os-cols}
 ::: {}
 <span class="label">Mac · 1 Package manager</span>
