@@ -1,9 +1,11 @@
 ---
 title: "Codex at BYU-I"
 subtitle: "Setup guide"
+author: "BYU-Idaho"
+institute: '<span class="title-qr"><img src="assets/qr/ai-codex.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/ai-codex">shortie.fyi/ai-codex</a></span></span>'
 format:
   revealjs:
-    theme: [default, ../ai_introduction/custom.scss]
+    theme: [default, custom.scss]
     slide-number: true
     embed-resources: true
     transition: fade

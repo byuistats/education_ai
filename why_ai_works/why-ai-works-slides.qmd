@@ -2,6 +2,9 @@
 title: "Why AI Works"
 subtitle: "A nonlinear tour of large language models"
 author: "Student Discussion Deck"
+institute: '<span class="title-qr"><img src="assets/qr/why-ai-works.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/why-ai-works">shortie.fyi/why-ai-works</a></span></span>'
+title-slide-attributes:
+  data-background-color: "#1a3a5c"
 format:
   revealjs:
     theme: [default, custom.scss]

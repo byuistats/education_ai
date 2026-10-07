@@ -420,3 +420,9 @@ $body-color: #23313d;
   .quote-dense blockquote { font-size: 0.69em; }
   .quote-very-dense blockquote { font-size: 0.62em; }
 }
+
+/* Left-align the author line and QR under the title, like the other decks */
+#title-slide .quarto-title-authors { display: block; justify-content: flex-start; padding: 0; }
+#title-slide .quarto-title-author { padding: 0; }
+
+@import "../tools/title-qr";

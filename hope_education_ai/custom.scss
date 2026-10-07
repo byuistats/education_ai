@@ -848,3 +848,9 @@ $body-color: #263630;
     display: none;
   }
 }
+
+/* Left-align the author line and QR under the title, like the other decks */
+#title-slide .quarto-title-authors { display: block; justify-content: flex-start; padding: 0; }
+#title-slide .quarto-title-author { padding: 0; }
+
+@import "../tools/title-qr";

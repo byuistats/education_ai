@@ -2,7 +2,9 @@
 title: "Don’t Write With AI, Say People Who Write With AI"
 subtitle: "“Your ‘cheating’ is their ‘assistive tool.’”"
 author: "Will Oremus · The Atlantic · October 3, 2026"
-institute: "[Read the article](https://www.theatlantic.com/search/?q=Don%27t+Write+With+AI%2C+Say+People+Who+Write+With+AI)"
+institute:
+  - "[Read the article](https://www.theatlantic.com/search/?q=Don%27t+Write+With+AI%2C+Say+People+Who+Write+With+AI)"
+  - '<span class="title-qr"><img src="assets/qr/write-with-ai.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/write-with-ai">shortie.fyi/write-with-ai</a></span></span>'
 title-slide-attributes:
   data-background-color: "#22252b"
 format:

@@ -15,7 +15,12 @@ _site/
 *.[Pp][Nn][Gg]
 # ...except the title-slide thumbnails shown on the GitHub Pages index
 !**/lead-slide.png
+# ...and the product logos used on the VS Code setup deck's tool profile slides
+!ai_vscode_start/assets/logos/*.png
 
 # Quarto render scratch
 **/.quarto/
 **/*.quarto_ipynb
+
+# API keys (Short.io); copy .env.example to .env
+.env

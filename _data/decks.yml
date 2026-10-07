@@ -1,4 +1,5 @@
 # One entry per slide deck. The index page (index.html) is built from this list.
+# group: Articles | Setup & training (sections on the index page)
 # type: Discussion | Workshop | Explainer | Research
 # date: when the deck was first published (YYYY-MM-DD)
 # quotes: optional path to the folder's quotes.md
@@ -6,6 +7,7 @@
 
 - title: "Don’t Write With AI, Say People Who Write With AI"
   folder: write_with_ai
+  group: "Articles"
   html: write-with-ai-slides.html
   qmd: write-with-ai-slides.qmd
   quotes: quotes.md
@@ -18,6 +20,7 @@
 
 - title: "The End of College as We Know It"
   folder: end_of_college
+  group: "Articles"
   html: end-of-college-slides.html
   qmd: end-of-college-slides.qmd
   quotes: quotes.md
@@ -30,6 +33,7 @@
 
 - title: "Hopeless but Hoping in the AI Age"
   folder: hope_education_ai
+  group: "Articles"
   html: faith-and-hope-slides.html
   qmd: faith-and-hope-slides.qmd
   date: 2026-09-30
@@ -41,6 +45,7 @@
 
 - title: "The Future of the American University"
   folder: cornell_report
+  group: "Articles"
   html: cornell-report-summary.html
   qmd: cornell-report-summary.qmd
   date: 2026-09-23
@@ -52,6 +57,7 @@
 
 - title: "y code when ai?"
   folder: hadley_on_ai
+  group: "Articles"
   html: hadley-on-ai-summary.html
   qmd: hadley-on-ai-summary.qmd
   date: 2026-09-14
@@ -64,6 +70,7 @@
 - title: "Wrestling with the Machine"
   aka: "AI in Education Workshop"
   folder: ai_introduction
+  group: "Articles"
   html: ai-workshop-slides.html
   qmd: ai-workshop-slides.qmd
   date: 2026-09-09
@@ -76,6 +83,7 @@
 - title: "Codex at BYU-I"
   aka: "AI Codex Setup"
   folder: ai_codex
+  group: "Setup & training"
   html: ai-codex-setup-slides.html
   qmd: ai-codex-setup-slides.qmd
   date: 2026-09-09
@@ -88,6 +96,7 @@
 - title: "Generative AI Hasn’t Changed Learning"
   aka: "AI and Statistics Education"
   folder: ai_stats_leaders
+  group: "Articles"
   html: ai-stats-leaders-slides.html
   qmd: ai-stats-leaders-slides.qmd
   date: 2026-09-09
@@ -99,6 +108,7 @@
 
 - title: "Why AI Works"
   folder: why_ai_works
+  group: "Articles"
   html: why-ai-works-slides.html
   qmd: why-ai-works-slides.qmd
   date: 2026-09-09
@@ -107,3 +117,15 @@
   slides: 11
   topics: [How LLMs work, Scaling laws]
   description: "The nonlinear science behind LLMs: scaling laws, emergent abilities, grokking, criticality, and in-context learning."
+
+- title: "Your First Day with AI in VS Code"
+  folder: ai_vscode_start
+  html: ai-vscode-start-slides.html
+  qmd: ai-vscode-start-slides.qmd
+  group: "Setup & training"
+  date: 2026-10-07
+  type: Workshop
+  source: "BYU-Idaho faculty and staff"
+  slides: 46
+  topics: [Tools, VS Code, Codex, Quarto]
+  description: "Start with nothing installed: VS Code, Codex, and a small command-line toolbox (Git, uv, Quarto, Playwright, GitHub), with appendices for Claude and a profile of every tool."

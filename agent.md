@@ -130,8 +130,11 @@ For each body slide:
 1. Render: `quarto render <folder>/<slug>-slides.qmd` (decks use `embed-resources: true`).
 2. Screenshot the title slide to `lead-slide.png` (1600×900) with headless Chrome:
    `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --hide-scrollbars --window-size=1600,900 --screenshot=<folder>/lead-slide.png "file://$PWD/<folder>/<slug>-slides.html"`
-3. Register the deck: add an entry to `_data/decks.yml` (title from the deck, folder, html, qmd, `quotes: quotes.md`, date, type, source, slide count, topics, one-sentence description). The GitHub Pages index (`index.html`) is built from that file; don't edit the card markup. Also add a line to the slide deck sources list in `README.md`.
-4. Add the folder's `.gitignore` (`/.quarto/` and `**/*.quarto_ipynb`).
+3. Add a title-slide QR code that opens the deck (Short.io, domain shortie.fyi; the key is in the git-ignored `.env`, see `.env.example`):
+   `uv run tools/shortio.py link https://byuistats.github.io/education_ai/<folder>/<slug>-slides.html --slug <short-slug> --title "<deck title>" --qr svg --out <folder>/assets/qr`
+   Then put the snippet in the deck's `institute:` field (copy it from any other deck's `.qmd`; if the deck already has an article link, make `institute` a list) and add `@import "../tools/title-qr";` to the deck's `custom.scss`. Decks need an `author:` for `institute` to show. Verify the QR scans from `lead-slide.png`.
+4. Register the deck: add an entry to `_data/decks.yml` (title from the deck, folder, html, qmd, `quotes: quotes.md`, date, type, source, slide count, topics, one-sentence description). The GitHub Pages index (`index.html`) is built from that file; don't edit the card markup. Also add a line to the slide deck sources list in `README.md`.
+5. Add the folder's `.gitignore` (`/.quarto/` and `**/*.quarto_ipynb`).
 
 ### Step 6: Review
 

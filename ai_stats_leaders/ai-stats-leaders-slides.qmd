@@ -2,6 +2,9 @@
 title: "Generative AI Hasn't Changed Learning"
 subtitle: "What statistics educators should protect, redesign, and research"
 author: "DS, CS, and Statistics Educators (with notes from J. Hathaway)"
+institute: '<span class="title-qr"><img src="assets/qr/ai-stats.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/ai-stats">shortie.fyi/ai-stats</a></span></span>'
+title-slide-attributes:
+  data-background-color: "#1a3a5c"
 format:
   revealjs:
     theme: [default, custom.scss]

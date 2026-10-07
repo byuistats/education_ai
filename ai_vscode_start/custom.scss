@@ -1,0 +1,220 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Avenir Next", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+$font-family-monospace: "SF Mono", "Menlo", "Consolas", monospace;
+$presentation-heading-color: #172433;
+$link-color: #287383;
+$presentation-font-size-root: 32px;
+$body-bg: #fbf8f2;
+$body-color: #23313d;
+
+/*-- scss:rules --*/
+:root {
+  --navy: #183a57;
+  --ink: #172433;
+  --teal: #287383;
+  --coral: #dc654e;
+  --gold: #e8b64a;
+  --cream: #fbf8f2;
+  --sand: #eee3d0;
+  --muted: #667582;
+}
+
+.reveal .slides section { font-size: 0.9em; text-align: left; }
+
+.reveal h2 {
+  border: 0; color: var(--ink); font-size: 1.3em; font-weight: 750; letter-spacing: -0.025em;
+  line-height: 1.04; margin: 0 0 0.5em; max-width: 92%; padding: 0;
+}
+.reveal h2::after { background: var(--coral); content: ""; display: block; height: 5px; margin-top: 0.26em; width: 76px; }
+.reveal p { line-height: 1.24; margin: 0.4em 0; }
+.reveal strong { color: inherit; }
+.reveal a { font-weight: 650; }
+.reveal ul, .reveal ol { margin-top: 0.3em; }
+.reveal li { margin-bottom: 0.25em; }
+
+.reveal .footer { color: #84909a; font-size: 0.42em; }
+.reveal .slide-number { background: transparent; color: #84909a; font-size: 0.45em; }
+
+/* Title slide */
+#title-slide { text-align: left; }
+#title-slide h1 { color: #fff; font-size: 2.3em; font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; margin: 0 0 0.35em; max-width: 62%; }
+#title-slide .subtitle { color: var(--gold); font-size: 0.9em; font-weight: 600; line-height: 1.2; margin: 0 0 2em; max-width: 60%; }
+#title-slide .quarto-title-author-name { color: #d6e2ea; font-size: 0.53em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+#title-slide .quarto-title-authors { display: block; padding: 0; }
+#title-slide .quarto-title-author { padding: 0; }
+#title-slide::after { color: rgba(255, 255, 255, 0.08); content: "VS"; font-size: 8.8em; font-weight: 900; line-height: 0.8; position: absolute; right: -0.03em; top: 0.12em; }
+
+/* Kicker above the title: where we are in the deck */
+.kicker { color: var(--coral); display: block; font-size: 0.45em; font-weight: 800; letter-spacing: 0.14em; margin-bottom: 0.5em; text-transform: uppercase; }
+.reveal .dark-slide .kicker { color: var(--gold); }
+
+.label { color: var(--coral); display: block; font-size: 0.5em; font-weight: 800; letter-spacing: 0.12em; margin-bottom: 0.5em; text-transform: uppercase; }
+.lede { color: var(--muted); font-size: 0.8em; line-height: 1.25; margin: 0.2em 0 0.7em; max-width: 92%; }
+.big-claim { color: var(--navy); font-size: 1.2em; font-weight: 750; letter-spacing: -0.02em; line-height: 1.12; margin: 0.6em 0; max-width: 90%; }
+
+/* Dark slides */
+.reveal .dark-slide h2, .reveal .dark-slide p, .reveal .dark-slide li, .reveal .dark-slide .big-claim { color: #fff; }
+.reveal .dark-slide .lede { color: #c9d6e0; }
+.reveal .dark-slide h2::after { background: var(--gold); }
+
+/* Setup steps */
+ol.steps { counter-reset: s; list-style: none; margin: 0.4em 0 0.4em 0; padding: 0; }
+ol.steps li { counter-increment: s; font-size: 1em; line-height: 1.22; margin-bottom: 0.5em; padding-left: 1.7em; position: relative; }
+ol.steps li::before { background: var(--navy); border-radius: 50%; color: #fff; content: counter(s); font-size: 0.7em; font-weight: 800; height: 1.6em; left: 0; line-height: 1.6em; position: absolute; text-align: center; top: 0.05em; width: 1.6em; }
+
+/* Mac / Windows columns */
+.os-cols { display: grid; gap: 0.9em; grid-template-columns: 1fr 1fr; margin-top: 0.4em; }
+.os-cols > div { background: #fff; border: 2px solid var(--sand); border-radius: 0.3em; padding: 0.55em 0.75em; }
+.os-cols .label { margin-bottom: 0.35em; }
+.os-cols p { font-size: 0.8em; }
+
+/* Terminal commands and prompts */
+.reveal pre.cmd { background: var(--navy); border-radius: 0.25em; box-shadow: none; color: #f6efe0; font-size: 0.64em; overflow: visible; width: 100%; line-height: 1.35; margin: 0.35em 0; overflow-wrap: anywhere; padding: 0.5em 0.7em; white-space: pre-wrap; }
+.reveal pre.cmd code { background: none; color: inherit; font-size: 1em; max-height: none; padding: 0; white-space: pre-wrap; word-break: break-word; }
+.reveal div.sourceCode, .reveal div.sourceCode pre.cmd { background: none; border: 0; margin: 0; }
+.reveal div.sourceCode pre.cmd { background: var(--navy); margin: 0.35em 0; }
+.reveal div.sourceCode pre.cmd code, .reveal div.sourceCode pre.cmd code span, .reveal div.sourceCode pre.cmd code a { color: #f6efe0 !important; }
+.prompt { background: #fff; border-left: 6px solid var(--teal); border-radius: 0 0.25em 0.25em 0; font-size: 0.95em; font-style: italic; line-height: 1.3; margin: 0.5em 0; padding: 0.5em 0.8em; }
+.prompt::before { color: var(--teal); content: "Ask the AI"; display: block; font-size: 0.6em; font-style: normal; font-weight: 800; letter-spacing: 0.12em; margin-bottom: 0.25em; text-transform: uppercase; }
+
+/* "You should see..." check */
+.check { background: #e5f1ee; border-left: 6px solid var(--teal); border-radius: 0 0.25em 0.25em 0; font-size: 0.85em; margin-top: 0.7em; padding: 0.45em 0.8em; }
+.check::before { color: var(--teal); content: "Check: "; font-weight: 800; }
+
+/* Links to tool profiles */
+.learn { bottom: 0.9em; font-size: 0.62em; left: 0; position: absolute; }
+.learn a { border: 1.5px solid var(--teal); border-radius: 999px; margin-right: 0.6em; padding: 0.2em 0.8em; text-decoration: none; }
+.learn a:hover { background: var(--teal); color: #fff; }
+
+/* Four-up tour and grid cards */
+.grid4 { display: grid; gap: 0.7em; grid-template-columns: 1fr 1fr; margin-top: 0.5em; }
+.grid4 > div { background: #fff; border-top: 4px solid var(--coral); border-radius: 0.2em; padding: 0.5em 0.75em; }
+.grid4 h3 { color: var(--ink); font-size: 1.05em; margin: 0 0 0.15em; }
+.grid4 p { color: var(--muted); font-size: 0.8em; margin: 0; }
+.grid4 kbd { background: var(--sand); border-radius: 0.2em; color: var(--ink); font-size: 0.9em; padding: 0.05em 0.35em; }
+
+/* Roadmap */
+.roadmap { display: grid; gap: 0.6em; margin-top: 0.6em; }
+.roadmap > div { align-items: baseline; border-top: 2px solid var(--sand); display: grid; gap: 0.8em; grid-template-columns: 2em 1fr; padding-top: 0.5em; }
+.roadmap span { color: var(--coral); font-size: 0.9em; font-weight: 800; }
+.roadmap p { font-size: 1em; font-weight: 700; margin: 0; }
+.roadmap small { color: var(--muted); display: block; font-size: 0.72em; font-weight: 500; margin-top: 0.15em; }
+
+/* Tables */
+.reveal table { font-size: 0.75em; margin: 0.3em 0; width: 100%; }
+.reveal table th { border-bottom: 2px solid var(--navy); color: var(--navy); font-size: 0.85em; letter-spacing: 0.06em; text-transform: uppercase; }
+.reveal table td, .reveal table th { padding: 0.25em 0.5em; text-align: left; }
+.reveal table tr { border-bottom: 1px solid var(--sand); }
+
+/* Quote */
+.reveal blockquote { background: none; border-left: 6px solid var(--coral); box-shadow: none; font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-size: 1.2em; font-style: normal; line-height: 1.3; margin: 0.5em 0; padding: 0.1em 0 0.1em 0.8em; width: 92%; }
+
+/* Tool profile slides */
+.pf { margin: 0.6em 0; max-width: 94%; }
+.pf .label { margin-bottom: 0.15em; }
+.pf p { font-size: 1em; margin: 0; }
+.profile-links { bottom: 0.9em; font-size: 0.62em; left: 0; position: absolute; }
+.profile-links a.back { background: var(--navy); border-radius: 999px; color: #fff; padding: 0.25em 0.9em; text-decoration: none; }
+.profile-links a { margin-right: 1em; }
+
+.source-note { bottom: 0.2em; color: var(--muted); font-size: 0.42em; left: 0; position: absolute; }
+.reveal code { background: var(--sand); border-radius: 0.2em; color: var(--ink); font-size: 0.85em; padding: 0.05em 0.3em; }
+
+/* Product screenshot and logo on tool profile slides */
+.profile-grid { align-items: start; display: grid; gap: 1em; grid-template-columns: 0.9fr 1.1fr; }
+.profile-text .pf { margin: 0.45em 0; }
+.profile-text .pf p { font-size: 0.85em; }
+.profile-shot img { border: 1px solid #d9d2c4; border-radius: 0.25em; box-shadow: 0 0.2em 0.8em rgba(23, 36, 51, 0.18); display: block; margin: 0; width: 100%; }
+.profile-shot .cap { color: var(--muted); font-size: 0.4em; margin-top: 0.5em; }
+img.logo { height: 1.3em; position: absolute; right: 0; top: -0.1em; width: auto; }
+img.logo.wide { height: 0.9em; top: 0.1em; }
+
+/* Username tip */
+.tip { background: #fff7e0; border-left: 6px solid var(--gold); border-radius: 0 0.25em 0.25em 0; font-size: 0.8em; margin: 0.7em 0; padding: 0.45em 0.8em; }
+
+/* VS Code screenshots in the four-up tour and the extension slide */
+.grid4 img { border: 1px solid #d9d2c4; border-radius: 0.15em; display: block; height: 4.3em; margin: 0 0 0.35em; object-fit: cover; object-position: left top; width: 100%; }
+.split { align-items: start; display: grid; gap: 0.9em; grid-template-columns: 0.8fr 1.3fr; }
+.shotrow { align-items: flex-start; display: flex; gap: 0.6em; }
+.shotrow img { border: 1px solid #d9d2c4; border-radius: 0.2em; box-shadow: 0 0.2em 0.8em rgba(23, 36, 51, 0.18); height: 8.6em; margin: 0; width: auto; }
+
+/* CLI definition under the tool table */
+.cli-def { background: #fff; border-left: 6px solid var(--coral); border-radius: 0 0.25em 0.25em 0; margin-top: 0.5em; padding: 0.35em 0.9em 0.2em; }
+.cli-def .label { margin-bottom: 0.2em; }
+.cli-def ul { margin: 0; padding-left: 1.1em; }
+.cli-def li { font-size: 0.7em; line-height: 1.2; margin-bottom: 0.15em; }
+
+/* Full-sentence "what the AI can do" on each install slide */
+.ai-can { border-left: 6px solid var(--teal); margin: 0.2em 0 0.5em; padding: 0.1em 0 0.1em 0.8em; }
+.ai-can .label { color: var(--teal); margin-bottom: 0.2em; }
+.ai-can p { color: var(--ink); font-size: 0.9em; margin: 0.15em 0; }
+
+/* Compact command blocks for the all-commands slide */
+.reveal pre.cmd.compact { font-size: 0.5em; margin: 0.15em 0 0.3em; }
+.os-cols .label { margin-top: 0.3em; }
+
+/* Keep long commands clear of the copy button */
+.reveal pre.cmd code { padding-right: 2em; }
+
+/* Copy button: a visible gold "Copy" label instead of the faint icon */
+.reveal button.code-copy-button {
+  background-color: var(--gold); border-radius: 0.3em; margin: 0.4em 0.5em 0 0; padding: 0.2em 0.8em;
+}
+.reveal button.code-copy-button:hover { background-color: #fff; }
+.reveal button.code-copy-button > .bi::before,
+.reveal button.code-copy-button:hover > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked:hover > .bi::before {
+  background-image: none; color: var(--ink); content: "Copy"; font-family: inherit; font-size: 0.78em;
+  font-weight: 800; height: auto; letter-spacing: 0.06em; text-transform: uppercase; vertical-align: baseline; width: auto;
+}
+.reveal button.code-copy-button.code-copy-button-checked > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked:hover > .bi::before { content: "Copied!"; }
+
+/* Compact command blocks for the all-commands slide */
+.reveal pre.cmd.compact { font-size: 0.5em; margin: 0.15em 0 0.3em; }
+.os-cols .label { margin-top: 0.3em; }
+
+/* Keep long commands clear of the copy button */
+.reveal pre.cmd code { padding-right: 2em; }
+
+/* Copy button: a visible gold "Copy" label instead of the faint icon */
+.reveal button.code-copy-button {
+  background-color: var(--gold); border-radius: 0.3em; margin: 0.4em 0.5em 0 0; padding: 0.2em 0.8em;
+}
+.reveal button.code-copy-button:hover { background-color: #fff; }
+.reveal button.code-copy-button > .bi::before,
+.reveal button.code-copy-button:hover > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked:hover > .bi::before {
+  background-image: none; color: var(--ink); content: "Copy"; font-family: inherit; font-size: 0.78em;
+  font-weight: 800; height: auto; letter-spacing: 0.06em; text-transform: uppercase; vertical-align: baseline; width: auto;
+}
+.reveal button.code-copy-button.code-copy-button-checked > .bi::before,
+.reveal button.code-copy-button.code-copy-button-checked:hover > .bi::before { content: "Copied!"; }
+
+/* QR code on the title slide: scan to open the deck */
+#title-slide .quarto-title-affiliation { font-size: 1em; margin-top: 1.4em; }
+.title-qr { align-items: center; display: flex; gap: 0.8em; margin-top: 0.2em; }
+.title-qr img { background: #fff; border-radius: 0.3em; height: 4.2em; margin: 0; padding: 0.35em; width: 4.2em; }
+.title-qr-text { color: #d6e2ea; display: block; font-size: 0.62em; line-height: 1.35; }
+.title-qr-text b { display: block; font-weight: 700; letter-spacing: 0.04em; }
+.title-qr-text a { color: var(--gold); font-size: 1.15em; font-weight: 700; text-decoration: none; }
+
+/* QR on the all-commands slide */
+.cmd-qr { align-items: center; bottom: 0.2em; display: flex; gap: 0.7em; justify-content: center; left: 0; position: absolute; right: 0; }
+.cmd-qr img { background: #fff; border: 1px solid #d9d2c4; border-radius: 0.2em; height: 3.7em; margin: 0; padding: 0.3em; width: 3.7em; }
+.cmd-hint { bottom: 0.9em; color: var(--muted); font-size: 0.6em; left: 0; line-height: 1.35; max-width: 11em; position: absolute; }
+.cmd-qr span { font-size: 0.6em; left: calc(50% + 4.8em); line-height: 1.3; position: absolute; }
+.cmd-qr b { color: var(--ink); display: block; }
+.cmd-qr a { font-weight: 700; }
+
+@import "../tools/title-qr";
+
+/* Dark divider slide: section roadmap */
+.reveal .dark-slide .roadmap > div { border-top-color: rgba(255, 255, 255, 0.25); }
+.reveal .dark-slide .roadmap span { color: var(--gold); }
+.reveal .dark-slide .roadmap small { color: #c9d6e0; }
+.reveal .dark-slide a { color: var(--gold); }
+.reveal .dark-slide .learn a { border-color: var(--gold); }
+.reveal .dark-slide .learn a:hover { background: var(--gold); color: var(--ink); }
