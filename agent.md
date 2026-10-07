@@ -134,7 +134,9 @@ For each body slide:
    `uv run tools/shortio.py link https://byuistats.github.io/education_ai/<folder>/<slug>-slides.html --slug <short-slug> --title "<deck title>" --qr svg --out <folder>/assets/qr`
    Then put the snippet in the deck's `institute:` field (copy it from any other deck's `.qmd`; if the deck already has an article link, make `institute` a list) and add `@import "../tools/title-qr";` to the deck's `custom.scss`. Decks need an `author:` for `institute` to show. Verify the QR scans from `lead-slide.png`.
 4. Register the deck: add an entry to `_data/decks.yml` (title from the deck, folder, html, qmd, `quotes: quotes.md`, date, type, source, slide count, topics, one-sentence description). The GitHub Pages index (`index.html`) is built from that file; don't edit the card markup. Also add a line to the slide deck sources list in `README.md`.
-5. Add the folder's `.gitignore` (`/.quarto/` and `**/*.quarto_ipynb`).
+5. Add the link-preview and tab-icon tags: in the deck's `.qmd`, under `format: revealjs:`, add
+   `include-in-header:` as a list of `../assets/icons/favicon-header.html` and `og-header.html`. Then run `uv run tools/make_og.py` (it reads `_data/decks.yml`, so register the deck first) to write `<folder>/og-header.html`. This makes a shared link, including a shortie.fyi short link, show the deck's title, description, and title-slide image.
+6. Add the folder's `.gitignore` (`/.quarto/` and `**/*.quarto_ipynb`).
 
 ### Step 6: Review
 

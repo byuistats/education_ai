@@ -12,6 +12,9 @@ format:
     theme: [default, custom.scss]
     slide-number: "c/t"
     embed-resources: true
+    include-in-header:
+      - ../assets/icons/favicon-header.html
+      - og-header.html
     transition: fade
     incremental: false
     center: false
