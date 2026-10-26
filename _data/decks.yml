@@ -5,6 +5,19 @@
 # quotes: optional path to the folder's quotes.md
 # aka: optional older or alternate name (searchable, not shown)
 
+- title: "A Mathematician Reads the AI Future"
+  folder: ai_math_atlantic
+  group: "Articles"
+  html: ai-math-atlantic-slides.html
+  qmd: ai-math-atlantic-slides.qmd
+  quotes: quotes.md
+  date: 2026-10-26
+  type: Discussion
+  source: "Steven Strogatz · The Atlantic"
+  slides: 13
+  topics: [Mathematics, Meaning and purpose]
+  description: "A Cornell mathematician asks what is left of math when AI supplies the answers, and finds the point may be human connection."
+
 - title: "Don’t Write With AI, Say People Who Write With AI"
   folder: write_with_ai
   group: "Articles"

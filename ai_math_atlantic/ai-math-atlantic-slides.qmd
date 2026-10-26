@@ -1,0 +1,221 @@
+---
+title: "A Mathematician Reads the AI Future"
+subtitle: "“My field is as much an expression of the human spirit as music and literature. Is it for the machines now?”"
+author: "Steven Strogatz · The Atlantic · October 25, 2026"
+institute:
+  - "[Read the article](https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/)"
+  - '<span class="title-qr"><img src="assets/qr/ai-math.svg" alt="QR code that opens this slide deck"><span class="title-qr-text"><b>Open the slides on your computer</b><a href="https://shortie.fyi/ai-math">shortie.fyi/ai-math</a></span></span>'
+title-slide-attributes:
+  data-background-color: "#1d2b45"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: "c/t"
+    embed-resources: true
+    include-in-header:
+      - ../assets/icons/favicon-header.html
+      - og-header.html
+    transition: fade
+    incremental: false
+    center: false
+    footer: "Strogatz · A Mathematician Reads the AI Future"
+---
+
+## My field is in crisis {.dark-slide background-color="#1d2b45"}
+
+<div class="subtitle-line">The author opens by naming what AI has done to his own subject.</div>
+
+<div class="pull-quote">
+<blockquote>“I am a math professor, and <span class="hl">my field is in crisis.</span> Nobody in math is ever going to forget the year 2026.”</blockquote>
+</div>
+
+<span class="label" style="margin-top:1.4em">Listen</span>
+
+<div class="subtitle-line"><a href="https://www.nytimes.com/2026/10/13/podcasts/the-daily/mathematicians-problem-ai-jobs.html">Strogatz on <em>The Daily</em>, the <em>New York Times</em> podcast</a></div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“I am a math professor, and my field is in crisis. Nobody in math is ever going to forget the year 2026. Unless this is really the end of the subject, and then nobody will remember anything about math anyway. Well, the machines will remember. But for them, this is something like day one.”
+
+The podcast Strogatz mentions later in the article: his conversation with Rachel Abrams on *The Daily*.
+:::
+
+## The argument
+
+<div class="subtitle-line">Does AI take the struggle and joy out of math, or give it back in a new form?</div>
+
+<div class="roadmap">
+<div><span>01</span><p>One response<small>Clear the open problems · Embrace the technology</small></p></div>
+<div><span>02</span><p>Knowing versus understanding<small>The what and the why · Not radiology · Mysterious, alluring</small></p></div>
+<div><span>03</span><p>What’s the point?<small>Math that stays pure · Human connection · A mirror</small></p></div>
+</div>
+
+## Clear the Excaliburs
+
+<div class="subtitle-line">One colleague answers the crisis by embracing the technology and redefining the human role.</div>
+
+<div class="pull-quote xlong">
+<blockquote>“He says we need to clear all of the existing open problems—pull out all the Excaliburs—to pave the way to a new kind of mathematics, in which the <span class="hl">most important human contributions</span> will be asking good questions, developing theories, interpreting machine-generated proofs, finding new applications, deciding which problems matter, and enjoying one another’s company as we explore all of this together.”</blockquote>
+<div class="attribution">— Alex Townsend, as told by Strogatz</div>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“This is how Alex is reacting to the crisis: embracing the technology and making it ours. Using it to extend the frontiers of math, pure and applied, and solve problems that really matter—problems in medicine and energy and climate, hard problems that AI will help us with. That’s the message of hope he wants to give to grad students. He says we need to clear all of the existing open problems—pull out all the Excaliburs—to pave the way to a new kind of mathematics, in which the most important human contributions will be asking good questions, developing theories, interpreting machine-generated proofs, finding new applications, deciding which problems matter, and enjoying one another’s company as we explore all of this together.”
+
+“So how did his colleagues feel about his plan? Many were exhilarated, but some were furious.”
+:::
+
+## Knowing and why
+
+<div class="subtitle-line">Applied mathematicians want the answer, and the reason when they can get it.</div>
+
+<div class="pull-quote">
+<blockquote>“Roughly speaking, applied mathematicians strive to discover both what’s true and, <span class="hl">when possible, why it’s true.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“Roughly speaking, applied mathematicians strive to discover both what’s true and, when possible, why it’s true. We use rigorous math when we can, but we aren’t embarrassed to lean on physical intuition, computers, experiments, data, analogies—anything to get to the answer and make sense of it.”
+:::
+
+## Pure math is the why
+
+<div class="subtitle-line">For pure mathematicians, the answer alone is not enough.</div>
+
+<div class="pull-quote long">
+<blockquote>“Pure math, on the other hand, is all about the why. Without the reasoning behind it, mere knowledge of the right answer—to a pure mathematician—<span class="hl">feels shallow, frustrating, and incomplete.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“This fixation on understanding can be hard for the public to sympathize with. If an AI model correctly predicts that you’re at heightened risk of developing breast cancer in the next five years, should you care that it can’t explain why, and neither can your radiologist? When lives are at stake, understanding becomes less urgent than just knowing the answer.”
+:::
+
+## Mathematics is not radiology
+
+<div class="subtitle-line">A Fields Medalist says understanding is the whole point.</div>
+
+<div class="pull-quote long">
+<blockquote>“Mathematics is not radiology. It is more like art or philosophy, and in fact, <span class="hl">human understanding is what it is all about.</span>”</blockquote>
+<div class="attribution">— Curtis McMullen, Harvard professor and Fields Medalist</div>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“Pure mathematicians agree, but this tension is not part of their work. As Curtis McMullen, a professor at Harvard and a Fields Medalist, said to me in a recent email after he heard me make a similar observation on NPR’s On Point: ‘Mathematics is not radiology. It is more like art or philosophy, and in fact, human understanding is what it is all about.’”
+:::
+
+## Mysterious, alluring, elusive
+
+<div class="subtitle-line">Applied mathematicians chase understanding too.</div>
+
+<div class="pull-quote">
+<blockquote>“Applied mathematicians want to understand math too, because it’s <span class="hl">mysterious, and alluring, elusive, inchoate.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“Applied mathematicians want to understand math too, because it’s mysterious, and alluring, elusive, inchoate. We’re not even sure whether math is out there in the universe—because what does out there even mean in terms of abstract concepts that live in our imagination? But we chase math anyway, and sometimes it materializes, or reveals itself to us, and then, a century or two later, it miraculously gives us GPS, and lasers for eye surgery, and remote TV transmissions, and ultrasounds for pregnant women, and all of the songs and photographs in your pocket, compressed with fantastically ingenious mathematical algorithms that people have thought up.”
+:::
+
+## What about math that stays pure?
+
+<div class="subtitle-line">The usual defense of math doesn’t cover the part that’s only for love.</div>
+
+<div class="pull-quote xlong">
+<blockquote>“But that defense of math is too easy, and anyway, that’s pure math that morphed into applied math. What about pure math that stays pure, the part of math that’s more like art or music or poetry, not yet of any real use to anyone, <span class="hl">except that it makes life worth living for the people who love it?</span> Isn’t that useful too?”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“At the town hall, a student named Aria Beaupré asked something like that. What’s the point? she wondered out loud. This is a bright young graduate student. Someone that age shouldn’t be asking that question, I thought. That’s for old people like me, looking back, not for young people like her, looking ahead. We were all reeling, too numb to make sense of what had just happened.”
+:::
+
+## The point may be human connection
+
+<div class="subtitle-line">The author’s answer to the student’s question.</div>
+
+<div class="pull-quote">
+<blockquote>“Now I think the point, even for math professors, <span class="hl">may be human connection.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“Among the hundreds of emails I received after the episode came out, one from an undergraduate moved me deeply. The student described many failures and tribulations, and a strict but inspiring teacher. ‘The very human things that you expressed, and that I’ve poured into this email, are not something that AI can achieve or experience,’ the student wrote, and later added, ‘We give these ideas and concepts meanings, and we use math to connect with one another, and bring meaning to each other’s lives and experiences. AI can’t even begin to replicate this impact, and it never will.’”
+
+“But is human connection really a sufficient justification for why anyone would devote themselves to math? … The deeper question is whether mathematics is fundamentally a human enterprise, like art or sports, or whether it’s more like science, the study of objective truths that exist independently of us.”
+:::
+
+## Human enterprise or objective truth?
+
+<div class="subtitle-line">Whether AI’s proofs are a triumph depends on what mathematics is.</div>
+
+<div class="quote-pair">
+<div class="pull-quote">
+<blockquote>“If mathematical truths exist outside of human minds, awaiting discovery by any intelligence powerful enough to pursue them, then <span class="hl">AI’s achievements are surely something to rejoice about.</span>”</blockquote>
+</div>
+<div class="pull-quote">
+<blockquote>“But if mathematics is a creative <em>human</em> endeavor—a way of exercising our ingenuity and sharing those experiences with other people—then <span class="hl">something achingly precious may be lost</span> when the machines take over and leave us behind.”</blockquote>
+</div>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“But is human connection really a sufficient justification for why anyone would devote themselves to math? I’m not sure it would satisfy pure mathematicians like Justin. The deeper question is whether mathematics is fundamentally a human enterprise, like art or sports, or whether it’s more like science, the study of objective truths that exist independently of us.”
+
+“‘Even though my heart wants math to be like an Olympic sport going forward, I know that it’s a science,’ Justin wrote recently. He finds himself torn between these competing conceptions of the subject we both love. ‘AI is separating those two things in an uncomfortable way and making us look in the mirror at ourselves.’”
+:::
+
+## Discovery and joy, ripped apart {.dark-slide background-color="#1d2b45"}
+
+<div class="subtitle-line">The author’s conclusion: both views of math can be true, and that is the hard part.</div>
+
+<div class="pull-quote xlong">
+<blockquote>“Mathematical truths may exist outside of us, but the search for them has always taken us deep inside ourselves… Until now, discovery and the joy of discovering went hand in hand. <span class="hl">Suddenly, AI is ripping them apart.</span>”</blockquote>
+</div>
+
+::: {.source-note}
+Steven Strogatz, “A Mathematician Reads the AI Future,” *The Atlantic*, October 25, 2026.
+:::
+
+::: {.notes}
+“Perhaps the hardest part is that both conceptions of math can be true. Mathematical truths may exist outside of us, but the search for them has always taken us deep inside ourselves, to find the best that our minds can muster. Until now, discovery and the joy of discovering went hand in hand. Suddenly, AI is ripping them apart.”
+
+“That’s why I’ve been losing sleep for months, and why Justin still hasn’t opened his bottle. Neither of us knows what comes next. Will there ever be a time for cognac again?”
+
+Justin Moore, a pure mathematician at Cornell, had saved a bottle of XO cognac for 19 years, to open when a problem he loved was solved. It was solved by a machine. He wrote: “AI is separating those two things in an uncomfortable way and making us look in the mirror at ourselves.”
+:::
+
+## For discussion
+
+<span class="label">Our question</span>
+
+<div class="discussion">If AI can supply the answer, what in our own courses is the “why” we most want students to struggle toward?</div>
